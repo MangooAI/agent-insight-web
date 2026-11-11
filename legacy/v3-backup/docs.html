@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>文档，Agent Insight</title>
+<meta name="description" content="Agent Insight 中文文档:入门教程、操作指南、参考文档与概念原理,Markdown 驱动,支持全文搜索。">
+<link rel="icon" href="assets/img/logo-light.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css?v=31">
+</head>
+<body data-page="docs">
+
+<nav class="nav" aria-label="主导航">
+  <div class="wrap nav-in">
+    <a class="nav-logo" href="index.html" aria-label="Agent Insight 首页">
+      <img src="assets/img/logo-light.svg" alt="Agent Insight" width="164" height="44">
+    </a>
+    <div class="nav-links">
+      <a data-nav="install" href="install.html">安装</a>
+      <a data-nav="dev" href="dev.html">社区</a>
+      <a data-nav="docs" href="docs.html">文档</a>
+      <a data-nav="contact" href="contact.html">联系我们</a>
+    </div>
+    <div class="nav-right">
+      <div class="nav-drop">
+        <button type="button" class="nav-drop-btn" aria-haspopup="true">代码
+          <svg class="caret" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="nav-drop-menu">
+          <a data-site="repo" href="#" target="_blank" rel="noopener">AtomGit 仓库</a>
+        </div>
+      </div>
+      <button class="nav-burger" aria-label="打开菜单"><i></i><i></i></button>
+    </div>
+  </div>
+</nav>
+
+<header class="page-head">
+  <div class="wrap page-head-in">
+    <h1>文档</h1>
+    <p class="lede">随 AtomGit 仓库 docs/zh 同步的 52 篇中文文档：入门教程、操作指南、参考文档、概念与原理。按 / 键全文搜索。</p>
+  </div>
+</header>
+
+<section class="wrap docs" aria-label="文档工作区">
+  <button class="btn btn-line docs-menu-btn" id="docsMenuBtn" type="button">目录与搜索</button>
+  <aside class="docs-side" aria-label="文档目录">
+    <div class="docs-search">
+      <input id="docSearch" type="search" placeholder="搜索 52 篇文档…" autocomplete="off" aria-label="搜索文档">
+      <div class="docs-results" id="docResults" role="listbox"></div>
+    </div>
+    <nav class="docs-tree" id="docTree" aria-label="文档分组"></nav>
+  </aside>
+
+  <div class="docs-main">
+    <div class="docs-crumb">
+      <span class="grp" id="docCrumbGroup">…</span>
+      <span aria-hidden="true">▸</span>
+      <span id="docCrumbTitle">…</span>
+      <a class="edit" id="docEdit" href="#" target="_blank" rel="noopener">在 AtomGit 上编辑</a>
+    </div>
+    <div id="docBody">
+      <div class="md-loading">加载中 …</div>
+    </div>
+    <div class="docs-nav2">
+      <a class="dnav" id="docPrev" href="javascript:void(0)"><span class="k">上一篇</span><span class="t">…</span></a>
+      <a class="dnav next" id="docNext" href="javascript:void(0)"><span class="k">下一篇</span><span class="t">…</span></a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <img src="assets/img/logo-light.svg" alt="Agent Insight" width="186" height="50">
+      <p>开源 AgentOps 平台:观察、评估、诊断并改进 Agent 执行。</p>
+    </div>
+    <div class="footer-grid5 footer-grid4">
+      <div>
+        <h4>关于 Agent Insight</h4>
+        <div class="footer-links"><a href="index.html">产品</a><a data-site="releases" href="#" target="_blank" rel="noopener">最新社区发行版</a></div>
+      </div>
+      <div>
+        <h4>社区</h4>
+        <div class="footer-links"><a data-site="repo" href="#" target="_blank" rel="noopener">源码仓</a><a href="dev.html">SIG 介绍</a></div>
+      </div>
+      <div>
+        <h4>支持与服务</h4>
+        <div class="footer-links"><a href="docs.html">文档</a><a href="docs.html#/faq">FAQ</a></div>
+      </div>
+      <div>
+        <h4>联系我们</h4>
+        <div class="footer-links"><a href="contact.html">互动与交流</a></div>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <span>© <span id="year">2026</span> Agent Insight contributors</span>
+      <span>Apache-2.0</span>
+      <span class="sp">openEuler ANSE SIG</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/site.js?v=31" defer></script>
+<script src="assets/js/docs.js?v=31" defer></script>
+</body>
+</html>

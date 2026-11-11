@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>参与开发，Agent Insight SIG-Intelligence</title>
+<meta name="description" content="Agent Insight 由 openEuler ANSE SIG 社区共建。了解 SIG 简介与贡献路径,从第一个 Issue 开始。">
+<link rel="icon" href="assets/img/logo-light.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css?v=33">
+</head>
+<body data-page="dev">
+
+<nav class="nav" aria-label="主导航">
+  <div class="wrap nav-in">
+    <a class="nav-logo" href="index.html" aria-label="Agent Insight 首页">
+      <img src="assets/img/logo-light.svg" alt="Agent Insight" width="164" height="44">
+    </a>
+    <div class="nav-links">
+      <a data-nav="install" href="install.html">安装</a>
+      <a data-nav="dev" href="dev.html">社区</a>
+      <a data-nav="docs" href="docs.html">文档</a>
+      <a data-nav="contact" href="contact.html">联系我们</a>
+    </div>
+    <div class="nav-right">
+      <div class="nav-drop">
+        <button type="button" class="nav-drop-btn" aria-haspopup="true">代码
+          <svg class="caret" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="nav-drop-menu">
+          <a data-site="repo" href="#" target="_blank" rel="noopener">AtomGit 仓库</a>
+        </div>
+      </div>
+      <button class="nav-burger" aria-label="打开菜单"><i></i><i></i></button>
+    </div>
+  </div>
+</nav>
+
+<header class="page-head">
+  <div class="wrap page-head-in">
+    <h1>参与共建</h1>
+    <p class="lede">Agent Insight 由 openEuler ANSE SIG 社区维护，托管于 AtomGit。提交代码、完善文档、分享排障案例，都是贡献。</p>
+    <div class="hero-cta">
+      <a class="btn btn-blue" data-site="issues" href="#" target="_blank" rel="noopener">浏览 Issue</a>
+    </div>
+  </div>
+</header>
+
+<section class="sec" aria-label="SIG 简介">
+  <div class="wrap">
+    <div class="sec-head left">
+      <h2>ANSE SIG 是什么</h2>
+      <p>ANSE SIG（AI-Native Software Engineering SIG）是 openEuler 社区的 AI 原生软件工程 SIG。其定位是基于 AI 原生软件工程范式，为企业级软件交付提供可控、可靠、可演进的解决方案。如果你也认同这套范式，欢迎加入 ANSE SIG，一起把 Agentic Engineering 工程化。</p>
+    </div>
+    <div class="dir-grid">
+      <div class="dir reveal">
+        <span class="k">GOVERNANCE</span>
+        <h3>开放的治理</h3>
+        <p>路线与决策在 Issues 和 Discussions 公开讨论，重大特性先提案、后实现，过程对社区透明。</p>
+      </div>
+      <div class="dir reveal" data-d="1">
+        <span class="k">ONBOARDING</span>
+        <h3>清晰的入口</h3>
+        <p>缺陷、需求、想法分渠道流转；贡献前签署对应社区 CLA,PR 经评审与 CI 后合入。</p>
+      </div>
+      <div class="dir reveal" data-d="2">
+        <span class="k">CADENCE</span>
+        <h3>双周节奏</h3>
+        <p>双周例会同步进展与阻塞，纪要与 Roadmap 在仓库公示，随时可查。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-soft" aria-label="参与路径">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>从第一个 PR 开始</h2>
+      <p>贡献流程遵循 openEuler 社区规范：签署 CLA、先讨论后实现、CI 通过后合入。</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="no">1</div><h3>注册并签署 CLA</h3><p>向 openEuler 仓库贡献需签署 <a href="https://clasign.osinfra.cn/sign/6983225bdcbb19710248ccf0" target="_blank" rel="noopener">openEuler CLA</a>。</p></div>
+      <div class="step reveal" data-d="1"><div class="no">2</div><h3>读<a href="https://www.openeuler.openatom.cn/zh/community/contribution/" target="_blank" rel="noopener">贡献指南</a></h3><p>了解分支模型、提交规范与 AGENTS.md 约定；文档贡献同样走 PR 流程。</p></div>
+      <div class="step reveal" data-d="2"><div class="no">3</div><h3>认领 <a data-site="issues" href="#" target="_blank" rel="noopener">Issue</a></h3><p>在 Issues 中筛选合适任务，先留言认领并简述思路；较大特性先在 Discussions 对齐。</p></div>
+      <div class="step reveal" data-d="3"><div class="no">4</div><h3>开发、测试、提 PR</h3><p>从工作分支开发，提交前运行 npm run test 并更新相关文档；PR 说明目的与验证结果。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap band-in">
+    <h2>从一条 Issue 开始</h2>
+    <p>一个缺陷报告、一段文档修订、一个评估器实现，都算数。</p>
+    <div class="band-cta">
+      <a class="btn btn-white" data-site="issues" href="#" target="_blank" rel="noopener">浏览 Issue</a>
+      <a class="btn btn-ghostlight" data-site="repo" href="#" target="_blank" rel="noopener">AtomGit 仓库</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <img src="assets/img/logo-light.svg" alt="Agent Insight" width="186" height="50">
+      <p>开源 AgentOps 平台:观察、评估、诊断并改进 Agent 执行。</p>
+    </div>
+    <div class="footer-grid5 footer-grid4">
+      <div>
+        <h4>关于 Agent Insight</h4>
+        <div class="footer-links"><a href="index.html">产品</a><a data-site="releases" href="#" target="_blank" rel="noopener">最新社区发行版</a></div>
+      </div>
+      <div>
+        <h4>社区</h4>
+        <div class="footer-links"><a data-site="repo" href="#" target="_blank" rel="noopener">源码仓</a><a href="dev.html">SIG 介绍</a></div>
+      </div>
+      <div>
+        <h4>支持与服务</h4>
+        <div class="footer-links"><a href="docs.html">文档</a><a href="docs.html#/faq">FAQ</a></div>
+      </div>
+      <div>
+        <h4>联系我们</h4>
+        <div class="footer-links"><a href="contact.html">互动与交流</a></div>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <span>© <span id="year">2026</span> Agent Insight contributors</span>
+      <span>Apache-2.0</span>
+      <span class="sp">openEuler ANSE SIG</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/site.js?v=33" defer></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="470" viewBox="0 0 1200 470" font-family="'IBM Plex Mono',Consolas,monospace">
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#C9F73A"/>
+    </marker>
+    <marker id="ah2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#5D6C7F"/>
+    </marker>
+  </defs>
+
+  <!-- forward spine -->
+  <path d="M140 190H1060" stroke="#C9F73A" stroke-width="1.5" marker-end="url(#ah)"/>
+  <!-- feedback loop -->
+  <path d="M1100 218v96q0 26-26 26H126q-26 0-26-26v-88" fill="none" stroke="#5D6C7F" stroke-width="1.2" stroke-dasharray="5 5" marker-end="url(#ah2)"/>
+  <text x="600" y="392" text-anchor="middle" font-size="12" fill="#5D6C7F" letter-spacing="3">SKILL / PROMPT 优化回流 · 修复资产沉淀,团队复用</text>
+
+  <!-- nodes -->
+  <g>
+    <!-- 1 采集 -->
+    <g transform="translate(60,110)">
+      <rect width="160" height="160" rx="6" fill="#0C1017" stroke="#E9F2FF" stroke-opacity=".12"/>
+      <rect x="0" y="0" width="160" height="4" rx="2" fill="#C9F73A"/>
+      <text x="16" y="34" font-size="11" fill="#5D6C7F" letter-spacing="2">STEP 01</text>
+      <text x="16" y="72" font-size="20" fill="#E9F0F8" font-weight="700" font-family="'Clash Display','Noto Sans SC',sans-serif">采集</text>
+      <text x="16" y="94" font-size="10.5" fill="#5D6C7F" letter-spacing="2">COLLECT</text>
+      <g font-size="11" fill="#9DADBF">
+        <text x="16" y="120">· 原生插件</text>
+        <text x="16" y="140">· Hook / OTLP</text>
+      </g>
+    </g>
+    <!-- 2 观测 -->
+    <g transform="translate(290,110)">
+      <rect width="160" height="160" rx="6" fill="#0C1017" stroke="#E9F2FF" stroke-opacity=".12"/>
+      <rect x="0" y="0" width="160" height="4" rx="2" fill="#4DD8FF"/>
+      <text x="16" y="34" font-size="11" fill="#5D6C7F" letter-spacing="2">STEP 02</text>
+      <text x="16" y="72" font-size="20" fill="#E9F0F8" font-weight="700" font-family="'Clash Display','Noto Sans SC',sans-serif">观测</text>
+      <text x="16" y="94" font-size="10.5" fill="#5D6C7F" letter-spacing="2">OBSERVE</text>
+      <g font-size="11" fill="#9DADBF">
+        <text x="16" y="120">· 调用树 / 时间轴</text>
+        <text x="16" y="140">· 模型 I/O 回放</text>
+      </g>
+    </g>
+    <!-- 3 评估 -->
+    <g transform="translate(520,110)">
+      <rect width="160" height="160" rx="6" fill="#0C1017" stroke="#E9F2FF" stroke-opacity=".12"/>
+      <rect x="0" y="0" width="160" height="4" rx="2" fill="#FFB454"/>
+      <text x="16" y="34" font-size="11" fill="#5D6C7F" letter-spacing="2">STEP 03</text>
+      <text x="16" y="72" font-size="20" fill="#E9F0F8" font-weight="700" font-family="'Clash Display','Noto Sans SC',sans-serif">评估</text>
+      <text x="16" y="94" font-size="10.5" fill="#5D6C7F" letter-spacing="2">EVALUATE</text>
+      <g font-size="11" fill="#9DADBF">
+        <text x="16" y="120">· 结果 / 轨迹 / 基准</text>
+        <text x="16" y="140">· 可靠性注入</text>
+      </g>
+    </g>
+    <!-- 4 诊断 -->
+    <g transform="translate(750,110)">
+      <rect width="160" height="160" rx="6" fill="#0C1017" stroke="#E9F2FF" stroke-opacity=".12"/>
+      <rect x="0" y="0" width="160" height="4" rx="2" fill="#FF5D47"/>
+      <text x="16" y="34" font-size="11" fill="#5D6C7F" letter-spacing="2">STEP 04</text>
+      <text x="16" y="72" font-size="20" fill="#E9F0F8" font-weight="700" font-family="'Clash Display','Noto Sans SC',sans-serif">诊断</text>
+      <text x="16" y="94" font-size="10.5" fill="#5D6C7F" letter-spacing="2">DIAGNOSE</text>
+      <g font-size="11" fill="#9DADBF">
+        <text x="16" y="120">· 确定性检查</text>
+        <text x="16" y="140">· 根因锚定到节点</text>
+      </g>
+    </g>
+    <!-- 5 优化 -->
+    <g transform="translate(980,110)">
+      <rect width="160" height="160" rx="6" fill="#0C1017" stroke="#E9F2FF" stroke-opacity=".12"/>
+      <rect x="0" y="0" width="160" height="4" rx="2" fill="#B78CFF"/>
+      <text x="16" y="34" font-size="11" fill="#5D6C7F" letter-spacing="2">STEP 05</text>
+      <text x="16" y="72" font-size="20" fill="#E9F0F8" font-weight="700" font-family="'Clash Display','Noto Sans SC',sans-serif">优化</text>
+      <text x="16" y="94" font-size="10.5" fill="#5D6C7F" letter-spacing="2">IMPROVE</text>
+      <g font-size="11" fill="#9DADBF">
+        <text x="16" y="120">· Skill 生成/迭代</text>
+        <text x="16" y="140">· 版本对比发布</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- connector ticks -->
+  <g stroke="#E9F2FF" stroke-opacity=".2"><path d="M230 190h56M460 190h56M690 190h56M920 190h56"/></g>
+</svg>

@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1400" viewBox="0 0 2400 1400" role="img" aria-labelledby="ttl desc">
+<title id="ttl">Agent Insight 生产 Trace 数据演化流程</title>
+<desc id="desc">输入生产Trace，经低价值过滤、智能采样、加权随机选择演化算子、七种演化操作、演化N轮循环、数据脱敏，输出高价值代表性数据集。</desc>
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F9FCFF"/><stop offset="0.55" stop-color="#F3F8FF"/><stop offset="1" stop-color="#F5FAFF"/></linearGradient>
+ <linearGradient id="hero" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#2669F4"/><stop offset="1" stop-color="#45B6ED"/></linearGradient>
+ <linearGradient id="violet" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#735EF5"/><stop offset="1" stop-color="#B18BFF"/></linearGradient>
+ <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#10B8C6"/><stop offset="1" stop-color="#69DCD1"/></linearGradient>
+ <linearGradient id="card" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#F5F9FF"/></linearGradient>
+ <linearGradient id="evolution" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F1F7FF"/><stop offset="0.65" stop-color="#F6F7FF"/><stop offset="1" stop-color="#EFFBFF"/></linearGradient>
+ <linearGradient id="paleBlue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E8F1FF"/><stop offset="1" stop-color="#DCEAFF"/></linearGradient>
+ <linearGradient id="palePurple" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#EFEDFF"/><stop offset="1" stop-color="#E5E8FF"/></linearGradient>
+ <linearGradient id="paleCyan" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#DCF9F7"/><stop offset="1" stop-color="#E7F7FF"/></linearGradient>
+ <filter id="shadow" x="-20%" y="-30%" width="150%" height="165%"><feGaussianBlur in="SourceAlpha" stdDeviation="9" result="blur"/><feOffset in="blur" dx="0" dy="10" result="offset"/><feComponentTransfer in="offset" result="shadowAlpha"><feFuncA type="linear" slope="0.12"/></feComponentTransfer><feMerge><feMergeNode in="shadowAlpha"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ <filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="38"/></filter>
+ <pattern id="dots" width="35" height="35" patternUnits="userSpaceOnUse"><circle cx="1.5" cy="1.5" r="1.3" fill="#8BADEB" opacity=".2"/></pattern>
+ <marker id="arrowBlue" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1L12 7L1 13" fill="none" stroke="#6091F4" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></marker>
+ <marker id="arrowViolet" markerWidth="15" markerHeight="15" refX="12" refY="7.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1L12 7.5L1 14" fill="none" stroke="#8C78EF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></marker>
+ <marker id="arrowCyan" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1L12 7L1 13" fill="none" stroke="#26B2C4" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></marker>
+ <style>
+ text{font-family:"Noto Sans CJK SC","Source Han Sans SC","Microsoft YaHei",sans-serif;text-rendering:geometricPrecision;}
+ .ttl{font-size:66px;font-weight:800;fill:#102A57;letter-spacing:1px}
+ .sub{font-size:28px;font-weight:400;fill:#6C7F9E;letter-spacing:.7px}
+ .step{font-size:35px;font-weight:750;fill:#183967;}
+ .mid{font-size:38px;font-weight:750;fill:#153462}
+ .operator{font-size:30px;font-weight:700;fill:#284777}
+ .small{font-size:24px;font-weight:600;fill:#6480A6;letter-spacing:.4px}
+ .tiny{font-size:22px;font-weight:700;fill:#7A92B5}
+ </style>
+</defs>
+<rect width="2400" height="1400" fill="url(#bg)"/>
+<circle cx="2150" cy="120" r="360" fill="#BBD7FF" opacity=".18" filter="url(#glow)"/>
+<circle cx="340" cy="1210" r="310" fill="#ABF0F0" opacity=".11" filter="url(#glow)"/>
+<path d="M0 175C340 115 560 135 840 180S1520 170 1770 100 2210 65 2400 140" fill="none" stroke="#D8E8FF" stroke-width="2" opacity=".6"/>
+<path d="M0 1270C400 1190 670 1350 1060 1300S1920 1200 2400 1300" fill="none" stroke="#D7E9FF" stroke-width="2" opacity=".7"/>
+<rect x="2080" y="43" width="260" height="165" fill="url(#dots)" opacity=".8"/>
+
+<!-- Header -->
+<rect x="138" y="73" width="12" height="76" rx="6" fill="url(#hero)"/>
+<text class="ttl" x="180" y="130">生产 Trace 数据演化流程</text>
+<text class="sub" x="186" y="179">从生产链路中筛选、演化并沉淀高价值代表性数据集</text>
+<g transform="translate(2064,100)"><rect width="205" height="56" rx="28" fill="#E5EFFF"/><circle cx="33" cy="28" r="9" fill="#377AFA"/><text x="53" y="37" font-size="24" font-weight="700" fill="#3E6DD2" font-family="Noto Sans CJK SC">Agent Insight</text></g>
+
+<rect x="185" y="225" width="570" height="142" rx="30" fill="url(#card)" stroke="#E0EAF8" stroke-width="2" filter="url(#shadow)"/>
+<rect x="209" y="253" width="86" height="86" rx="25" fill="#E8F0FF"/>
+<g transform="translate(221,266) scale(0.96)" fill="none" stroke="#3274E6" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 14h40v36H13z M22 24h16 M22 32h24 M22 40h10"/><circle cx="48" cy="40" r="6"/></g>
+<text x="315" y="310" class="step" text-anchor="start">输入：生产 Trace</text>
+<text x="723" y="263" text-anchor="end" class="tiny" fill="#3274E6">01 / 输入</text>
+<rect x="915" y="225" width="570" height="142" rx="30" fill="url(#card)" stroke="#E0EAF8" stroke-width="2" filter="url(#shadow)"/>
+<rect x="939" y="253" width="86" height="86" rx="25" fill="#EEEAFE"/>
+<g transform="translate(951,266) scale(0.96)" fill="none" stroke="#716AE7" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13h45L37 33v14l-11 6V33z"/><path d="M20 14h24"/></g>
+<text x="1045" y="310" class="step" text-anchor="start">过滤低价值 Trace</text>
+<text x="1453" y="263" text-anchor="end" class="tiny" fill="#716AE7">02 / 过滤</text>
+<rect x="1645" y="225" width="570" height="142" rx="30" fill="url(#card)" stroke="#E0EAF8" stroke-width="2" filter="url(#shadow)"/>
+<rect x="1669" y="253" width="86" height="86" rx="25" fill="#E0F9F8"/>
+<g transform="translate(1681,266) scale(0.96)" fill="none" stroke="#19ADBB" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="32" cy="32" r="22"/><circle cx="32" cy="32" r="12"/><path d="M32 10v10M54 32H44M32 54V44M10 32h10"/></g>
+<text x="1775" y="310" class="step" text-anchor="start">智能采样</text>
+<text x="2183" y="263" text-anchor="end" class="tiny" fill="#19ADBB">03 / 采样</text>
+<path d="M755 296H895" fill="none" stroke="#6798F8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowBlue)"/>
+<path d="M1485 296H1625" fill="none" stroke="#6798F8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowBlue)"/>
+<rect x="105" y="427" width="2190" height="732" rx="48" fill="url(#evolution)" stroke="#DCE8FC" stroke-width="2"/>
+<rect x="139" y="452" width="236" height="62" rx="31" fill="#E5EEFF"/>
+<text x="257" y="493" class="mid" text-anchor="middle">数据演化</text>
+<circle cx="2057" cy="468" r="6" fill="#8BAAFA" opacity=".3"/><circle cx="2082" cy="468" r="6" fill="#8BAAFA" opacity=".45"/><circle cx="2107" cy="468" r="6" fill="#8BAAFA" opacity=".6"/>
+<path d="M1930 367V410Q1930 434 1906 434H1220V525" fill="none" stroke="#739AF5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowBlue)"/>
+<rect x="710" y="528" width="1020" height="113" rx="31" fill="#FFFFFF" stroke="#CFDEFA" stroke-width="2" filter="url(#shadow)"/>
+<rect x="736" y="552" width="66" height="66" rx="21" fill="#EAE9FF"/>
+<g transform="translate(742,558) scale(0.85)" fill="none" stroke="#7968E7" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M11 19h9q9 0 14 13l4 7q5 9 14 9h3M47 43l8 5-8 5M11 48h9q11 0 17-14l4-8q4-7 12-7h2M47 14l8 5-8 5"/></g>
+<text x="827" y="599" class="mid" text-anchor="start">按权重随机挑选演化算子</text>
+<rect x="1542" y="567" width="160" height="42" rx="21" fill="#F0EEFF"/><text x="1622" y="595" text-anchor="middle" font-size="21" font-weight="700" fill="#7868D9" font-family="Noto Sans CJK SC">随机选择</text>
+<path d="M1220 643V683" fill="none" stroke="#927CEE" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowViolet)"/>
+<rect x="225" y="695" width="1785" height="244" rx="30" fill="#FFFFFF" fill-opacity="0.7" stroke="#CDDAF4" stroke-width="2.5" stroke-dasharray="11 9"/>
+<rect x="256" y="674" width="216" height="40" rx="20" fill="#F1F4FF"/><text x="364" y="703" text-anchor="middle" font-size="23" font-weight="700" fill="#637AB4" font-family="Noto Sans CJK SC">演化算子集合</text>
+<rect x="252" y="725" width="430" height="89" rx="23" fill="#FFFFFF" stroke="#E2E9F6" stroke-width="2"/>
+<rect x="266" y="740" width="58" height="58" rx="17" fill="#E8F0FF"/>
+<g transform="translate(268,742) scale(0.85)" fill="none" stroke="#4B85F3" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="20" cy="32" r="8"/><circle cx="47" cy="19" r="7"/><circle cx="47" cy="46" r="7"/><path d="M27 27l13-5M27 37l13 6M20 24V14"/></g>
+<text x="346" y="782" class="operator" text-anchor="start">推理化</text>
+<rect x="712" y="725" width="430" height="89" rx="23" fill="#FFFFFF" stroke="#E2E9F6" stroke-width="2"/>
+<rect x="726" y="740" width="58" height="58" rx="17" fill="#EEEBFF"/>
+<g transform="translate(728,742) scale(0.85)" fill="none" stroke="#806DEA" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><rect x="14" y="16" width="31" height="33" rx="4"/><path d="M22 10h24a6 6 0 0 1 6 6v25 M21 26h17M21 35h15"/></g>
+<text x="806" y="782" class="operator" text-anchor="start">多上下文</text>
+<rect x="1172" y="725" width="430" height="89" rx="23" fill="#FFFFFF" stroke="#E2E9F6" stroke-width="2"/>
+<rect x="1186" y="740" width="58" height="58" rx="17" fill="#E0F8FA"/>
+<g transform="translate(1188,742) scale(0.85)" fill="none" stroke="#14A8BE" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="32" cy="32" r="22"/><circle cx="32" cy="32" r="12"/><circle cx="32" cy="32" r="3"/><path d="M47 17l8-8M45 19l9-1"/></g>
+<text x="1266" y="782" class="operator" text-anchor="start">具体化</text>
+<rect x="252" y="829" width="430" height="89" rx="23" fill="#FFFFFF" stroke="#E2E9F6" stroke-width="2"/>
+<rect x="266" y="844" width="58" height="58" rx="17" fill="#E8F0FF"/>
+<g transform="translate(268,846) scale(0.85)" fill="none" stroke="#4B85F3" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M32 7l21 9v16q0 17-21 27Q11 49 11 32V16z"/><path d="M23 33l6 6 13-15"/></g>
+<text x="346" y="886" class="operator" text-anchor="start">加约束</text>
+<rect x="712" y="829" width="430" height="89" rx="23" fill="#FFFFFF" stroke="#E2E9F6" stroke-width="2"/>
+<rect x="726" y="844" width="58" height="58" rx="17" fill="#EEEBFF"/>
+<g transform="translate(728,846) scale(0.85)" fill="none" stroke="#806DEA" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="13" width="21" height="38" rx="4"/><rect x="34" y="13" width="21" height="38" rx="4"/><path d="M17 28h5M42 37h5"/></g>
+<text x="806" y="886" class="operator" text-anchor="start">对比化</text>
+<rect x="1172" y="829" width="430" height="89" rx="23" fill="#FFFFFF" stroke="#E2E9F6" stroke-width="2"/>
+<rect x="1186" y="844" width="58" height="58" rx="17" fill="#E0F8FA"/>
+<g transform="translate(1188,846) scale(0.85)" fill="none" stroke="#14A8BE" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 43h20M24 50h16M27 56h10"/><path d="M21 37a20 20 0 1 1 22 0l-2 6H23z"/><path d="M32 15v8M22 28h20"/></g>
+<text x="1266" y="886" class="operator" text-anchor="start">假设化</text>
+<rect x="1638" y="725" width="340" height="193" rx="25" fill="#EAF9F8" stroke="#C9EBE9" stroke-width="2"/>
+<rect x="1756" y="746" width="92" height="85" rx="26" fill="#D6F5F1"/>
+<g transform="translate(1771,758) scale(0.96)" fill="none" stroke="#149AAB" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 32h20M30 32v-15h18M30 32v15h18"/><circle cx="52" cy="17" r="6"/><circle cx="52" cy="47" r="6"/><circle cx="10" cy="32" r="5"/></g>
+<text x="1808" y="878" class="operator" text-anchor="middle">广度扩展</text>
+<path d="M1220 940V988" fill="none" stroke="#927CEE" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowViolet)"/>
+<rect x="827" y="994" width="785" height="108" rx="31" fill="#FFFFFF" stroke="#C9DBFF" stroke-width="2.5" filter="url(#shadow)"/>
+<rect x="860" y="1017" width="64" height="64" rx="20" fill="#E2F4FD"/>
+<g transform="translate(863,1020) scale(0.89)" fill="none" stroke="#2B93D5" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><rect x="13" y="12" width="37" height="43" rx="5"/><path d="M21 23h20M21 31h13M21 41l6 6 14-14"/></g>
+<text x="957" y="1060" class="mid" text-anchor="start">单次演化结果</text>
+<rect x="1438" y="1027" width="145" height="43" rx="21" fill="#E9F5FF"/><text x="1510" y="1056" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="22" font-weight="700" fill="#4584CD">迭代产出</text>
+<path d="M1612 1048H2180Q2210 1048 2210 1018V590Q2210 578 2196 578H1740" fill="none" stroke="#8B7AEF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowViolet)"/>
+<rect x="2035" y="815" width="200" height="59" rx="29" fill="#FFFFFF" stroke="#D7D1FF" stroke-width="2" filter="url(#shadow)"/>
+<path d="M2065 845a12 12 0 0 1 21-8 M2087 832v8h-8 M2086 851a12 12 0 0 1-21 4 M2064 860v-8h8" fill="none" stroke="#8A78EE" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="2098" y="852" font-family="Noto Sans CJK SC" font-size="25" font-weight="750" fill="#6555BE">演化 N 轮</text>
+<path d="M1220 1105V1188H960V1214" fill="none" stroke="#2CB9CB" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowCyan)"/>
+<rect x="665" y="1218" width="600" height="132" rx="31" fill="#FFFFFF" stroke="#CFE8EE" stroke-width="2.5" filter="url(#shadow)"/>
+<rect x="701" y="1248" width="78" height="78" rx="24" fill="#E4FAF6"/>
+<g transform="translate(710,1258) scale(0.91)" fill="none" stroke="#20ADAB" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M32 7l21 9v16q0 17-21 27Q11 49 11 32V16z"/><rect x="24" y="30" width="17" height="14" rx="3"/><path d="M28 30v-5a5 5 0 0 1 10 0v5"/></g>
+<text x="815" y="1300" class="step" text-anchor="start">数据脱敏</text>
+<text x="1215" y="1254" text-anchor="end" class="tiny">04 / 脱敏</text>
+<path d="M1265 1284H1377" fill="none" stroke="#2CB9CB" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowCyan)"/>
+<rect x="1400" y="1218" width="748" height="132" rx="31" fill="#EAFBF9" stroke="#A8E7E4" stroke-width="2.7" filter="url(#shadow)"/>
+<rect x="1430" y="1248" width="79" height="78" rx="24" fill="#D5F6F0"/>
+<g transform="translate(1439,1257) scale(0.91)" fill="none" stroke="#12A7B6" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="32" cy="13" rx="21" ry="8"/><path d="M11 13v34c0 11 42 11 42 0V13M11 30c0 11 42 11 42 0"/><path d="M25 45l5 5 11-11"/></g>
+<text x="1544" y="1297" font-family="Noto Sans CJK SC" font-size="32" font-weight="800" fill="#0E6177">输出：高价值代表性数据集</text>
+<rect x="1980" y="1237" width="132" height="35" rx="17" fill="#D1F4ED"/><text x="2046" y="1262" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="20" font-weight="700" fill="#0E8A92">最终产出</text>
+<g opacity=".48"><circle cx="100" cy="1300" r="5" fill="#AAC7FF"/><circle cx="120" cy="1316" r="3" fill="#AAC7FF"/><circle cx="128" cy="1280" r="3" fill="#AAC7FF"/></g>
+</svg>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agent Insight，让 Agent 的每一步都有据可查</title>
+<meta name="description" content="Agent Insight 是开源的 AgentOps 平台:采集执行链路、量化评估结果与轨迹、锚定故障根因、沉淀可复用的 Skill。openEuler 社区项目,Apache-2.0,自托管。">
+<link rel="icon" href="assets/img/logo-light.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css?v=34">
+</head>
+<body data-page="home">
+
+<nav class="nav" aria-label="主导航">
+  <div class="wrap nav-in">
+    <a class="nav-logo" href="index.html" aria-label="Agent Insight 首页">
+      <img src="assets/img/logo-light.svg" alt="Agent Insight" width="208" height="56">
+    </a>
+    <div class="nav-links">
+      <a data-nav="install" href="install.html">安装</a>
+      <a data-nav="dev" href="dev.html">社区</a>
+      <a data-nav="docs" href="docs.html">文档</a>
+      <a data-nav="contact" href="contact.html">联系我们</a>
+    </div>
+    <div class="nav-right">
+      <div class="nav-drop">
+        <button type="button" class="nav-drop-btn" aria-haspopup="true">代码
+          <svg class="caret" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="nav-drop-menu">
+          <a data-site="repo" href="#" target="_blank" rel="noopener">AtomGit 仓库</a>
+        </div>
+      </div>
+      <button class="nav-burger" aria-label="打开菜单"><i></i><i></i></button>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header class="hero">
+  <div class="wrap hero-in">
+    <div class="hero-copy">
+      <h1>跑得稳，看得清，<br>测得全，诊得准</h1>
+      <p class="hero-lede">让生产级 Agent 越用越好：Agent Insight 构建覆盖全生命周期的可靠性保障能力，行为可观测、质量可度量、故障可定位、能力可进化。</p>
+      <div class="hero-cta">
+        <a class="btn btn-blue" href="install.html">立即安装</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="shots-rotator" data-shots data-caps='["持续改进闭环 · 生产级 Agent 越用越好","系统仪表盘 · 趋势与核心指标一屏尽览","可靠性闭环 · 评测、检测、恢复、诊断、优化"]'>
+        <div class="shots-track">
+          <figure class="shots-slide is-active">
+            <img src="assets/img/hero-1-web.gif" alt="生产级 Agent 可靠性持续改进闭环动画" width="1280" height="720" fetchpriority="high">
+          </figure>
+          <figure class="shots-slide">
+            <img src="assets/img/hero-2.png" alt="系统仪表盘:Trace 流量趋势、错误率与核心指标" width="1633" height="872" loading="lazy">
+          </figure>
+          <figure class="shots-slide">
+            <img src="assets/img/hero-3.png" alt="可靠性持续改进闭环:评测、检测、恢复、诊断、优化" width="1672" height="941" loading="lazy">
+          </figure>
+        </div>
+        <div class="shots-ui">
+          <div class="shots-bars" role="group" aria-label="切换产品画面">
+            <button type="button" aria-label="持续改进闭环画面" aria-selected="true"><i></i></button>
+            <button type="button" aria-label="系统仪表盘画面" aria-selected="false"><i></i></button>
+            <button type="button" aria-label="可靠性闭环画面" aria-selected="false"><i></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<!-- ================= 功能 ================= -->
+<section class="sec" id="features">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>关键能力</h2>
+      <p>观测、验证、防护、改进闭环：能完成一次任务，不等于能持续、可控地交付。</p>
+    </div>
+    <div class="feat-grid">
+      <div class="feat reveal">
+        <div class="feat-ico" style="background:var(--blue-soft);color:var(--blue)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><path d="M12 3.5v3M12 17.5v3M3.5 12h3M17.5 12h3"/></svg></div>
+        <h3>观测</h3>
+        <p>看清执行过程：还原 Agent 层、MaaS 网关层到推理层的端到端执行链路，多视图全局分析 Agent 行为轨迹。</p>
+      </div>
+      <div class="feat reveal" data-d="1">
+        <div class="feat-ico" style="background:var(--teal-soft);color:var(--teal)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 19V10M10 19V5M16 19v-6M22 19H2"/></svg></div>
+        <h3>验证</h3>
+        <p>量化能力与风险：结合多维评测和故障注入，评估任务效果、运行稳定性与容错恢复能力，验证优化成效。</p>
+      </div>
+      <div class="feat reveal" data-d="2">
+        <div class="feat-ico" style="background:var(--violet-soft);color:var(--violet)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.6-3 8-7 9-4-1-7-4.4-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <h3>防护</h3>
+        <p>及时发现并处置异常：通过运行时故障感知与分级干预，阻断故障传播，支持任务恢复，让执行过程稳定可控。</p>
+      </div>
+      <div class="feat reveal" data-d="3">
+        <div class="feat-ico" style="background:var(--amber-soft);color:var(--amber)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M13 2L4.5 13.5H11L9.5 22 19 10h-6.5z"/></svg></div>
+        <h3>改进</h3>
+        <p>让问题驱动持续优化：基于轨迹证据定位根因，结合评测与诊断结果实现策略调优、可靠性增强，持续提升 Agent 能力。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 1 观测 ================= -->
+<section class="sec sec-soft">
+  <div class="wrap split">
+    <div class="split-txt reveal">
+      <h2>观测:看清执行过程</h2>
+      <ul class="split-list">
+        <li>全链路追踪:还原 Agent 层、MaaS 网关层到推理层的端到端执行链路</li>
+        <li>三种采集方式统一归一化,断点续传,不丢数据</li>
+        <li>多视图全局分析 Agent 行为轨迹</li>
+      </ul>
+    </div>
+    <div class="reveal" data-d="1">
+      <div class="mini" data-mini>
+        <figure class="mini-slide is-active"><img src="assets/img/observe-1.svg" alt="跨层执行链路追踪与重建:Agent 层、MaaS 网关层、推理层共享同一链路 ID" width="1600" height="900" loading="lazy"></figure>
+        <figure class="mini-slide"><img src="assets/img/observe-2.png" alt="链路追踪界面:完整执行链路逐层展开" width="1636" height="871" loading="lazy"></figure>
+      </div>
+      <p class="mini-cap">跨层链路追踪 · 链路追踪界面</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 2 评测 ================= -->
+<section class="sec">
+  <div class="wrap split rev">
+    <div class="split-txt reveal">
+      <h2>评测:覆盖结果、过程、可靠性、Benchmark 的综合评测体系</h2>
+      <ul class="split-list">
+        <li>七步使用流程:选对象、建实验、选用例、配评估器、执行、看分数与依据建议</li>
+        <li>预置 29 个评估器,支持自定义;对照组实验对比模型与 Skill 版本</li>
+        <li>评测集生成:Trace 智能采样 + 知识图谱,Agent 代码 + 样本演化</li>
+      </ul>
+    </div>
+    <div class="reveal" data-d="1">
+      <div class="mini" data-mini>
+        <figure class="mini-slide is-active"><img src="assets/img/evaluate-1.svg" alt="创建评测实验七步流程:从选择评测对象到浏览实验结果" width="2400" height="800" loading="lazy"></figure>
+        <figure class="mini-slide"><img src="assets/img/evaluate-2.svg" alt="生产 Trace 数据演化流程:智能采样与七种演化算子" width="2400" height="1400" loading="lazy"></figure>
+        <figure class="mini-slide"><img src="assets/img/evaluate-3.png" alt="Trace 评测详情:结果评测、轨迹评测与评分点证据" width="1800" height="1152" loading="lazy"></figure>
+      </div>
+      <p class="mini-cap">实验流程 · 数据演化 · 评测详情</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 3 Agent 可靠性 ================= -->
+<section class="sec sec-soft">
+  <div class="wrap split">
+    <div class="split-txt reveal">
+      <h2>Agent 可靠性:量化能力、识别风险、指导优化</h2>
+      <ul class="split-list">
+        <li>评测资产 → 评测执行 → 评测结果:统一指标、数据与工具,全程可追溯</li>
+        <li>故障注入:Skill 注入、提示词干预、运行时拦截改写;多维评估结果、轨迹、韧性、安全</li>
+        <li>预置评测集覆盖 25 类故障模式、29 个注入场景,随故障目录持续同步</li>
+      </ul>
+    </div>
+    <div class="reveal" data-d="1">
+      <div class="mini" data-mini>
+        <figure class="mini-slide is-active"><img src="assets/img/ras-1.svg" alt="Agent RAS 可靠性智能架构" width="1600" height="900" loading="lazy"></figure>
+        <figure class="mini-slide"><img src="assets/img/ras-2.png" alt="RAS 可靠性评测详情:故障检测、触发处置与故障消解评分点" width="1800" height="1162" loading="lazy"></figure>
+      </div>
+      <p class="mini-cap">RAS 架构 · 评测详情</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 4 智能诊断 ================= -->
+<section class="sec">
+  <div class="wrap split rev">
+    <div class="split-txt reveal">
+      <h2>智能诊断:一键定位超长轨迹故障根因</h2>
+      <ul class="split-list">
+        <li>三层取证机制:确定性扫描全量步骤,模型只做有界查询,超大内容按需外部检索</li>
+        <li>五模块语义归因:记忆、反思、规划、动作、系统独立判定,每条结论必引用证据</li>
+        <li>诊断能力可扩展、可核验:一键诊断,10 分钟出结论,根因归因准确率 ≥ 80%</li>
+      </ul>
+    </div>
+    <div class="reveal" data-d="1">
+      <div class="mini" data-mini>
+        <figure class="mini-slide is-active"><img src="assets/img/diagnose-1.svg" alt="智能诊断认知层次图" width="1440" height="1020" loading="lazy"></figure>
+        <figure class="mini-slide"><img src="assets/img/diagnose-2.svg" alt="智能诊断多层架构" width="2400" height="1350" loading="lazy"></figure>
+        <figure class="mini-slide"><img src="assets/img/diagnose-3.png" alt="诊断分析界面:关键诊断发现与证据节点" width="1800" height="1146" loading="lazy"></figure>
+      </div>
+      <p class="mini-cap">认知层次 · 多层架构 · 诊断界面</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 5 智能优化 ================= -->
+<section class="sec sec-soft">
+  <div class="wrap split">
+    <div class="split-txt reveal">
+      <h2>智能优化:问题驱动迭代,多级验证保障改进质量</h2>
+      <ul class="split-list">
+        <li>算子归并:分层去重、按频次分级,把海量问题收敛为可落地的优化清单</li>
+        <li>编辑范围约束:基线快照比对、误删自动恢复、改动超限告警</li>
+        <li>自验证闭环:结构、真值、行为三级校验,任一失败自动回退重写</li>
+      </ul>
+    </div>
+    <div class="reveal" data-d="1">
+      <div class="mini" data-mini>
+        <figure class="mini-slide is-active"><img src="assets/img/optimize-1.svg" alt="智能优化机制:多轮规划、编辑范围约束与自验证闭环" width="1320" height="1000" loading="lazy"></figure>
+        <figure class="mini-slide"><img src="assets/img/product/skill-workspace.png" alt="Skill 工作台界面:生成到发布" width="1800" height="1003" loading="lazy"></figure>
+      </div>
+      <p class="mini-cap">优化机制 · Skill 工作台</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 集成 ================= -->
+<section class="sec" id="integrations">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>已支持对接 17 个主流 Agent 平台</h2>
+      <p>每个平台按各自的原生机制接入，不改造 Agent 本体；平台清单随版本持续扩展。</p>
+    </div>
+    <div class="intg reveal">
+      <div class="intg-head">
+        <h3>四种采集方式</h3>
+        <label class="intg-filter">
+          <svg width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="#7A87A2" stroke-width="1.6"><circle cx="6.5" cy="6.5" r="4.8"/><path d="M10.3 10.3L14 14"/></svg>
+          <input id="intgFilter" type="search" placeholder="过滤平台,如 langchain、otlp、trae" aria-label="过滤接入平台">
+        </label>
+      </div>
+      <div class="intg-groups" id="intgList">
+        <div class="igroup">
+          <div class="gh"><i style="background:var(--blue)"></i>原生插件<span class="cnt">3</span></div>
+          <div class="chips"><span class="chip">OpenCode</span><span class="chip">Hermes</span><span class="chip">Qoder</span></div>
+        </div>
+        <div class="igroup">
+          <div class="gh"><i style="background:var(--amber)"></i>Hook 采集器<span class="cnt">5</span></div>
+          <div class="chips"><span class="chip">Qwen Code</span><span class="chip">Codex</span><span class="chip">PI Agent</span><span class="chip">CoPaw</span><span class="chip">xiaoO</span></div>
+        </div>
+        <div class="igroup">
+          <div class="gh"><i style="background:var(--teal)"></i>OTLP 上报<span class="cnt">7</span></div>
+          <div class="chips"><span class="chip">Claude Code</span><span class="chip">OpenJiuwen</span><span class="chip">LangGraph</span><span class="chip">LangChain</span><span class="chip">LlamaIndex</span><span class="chip">OpenClaw</span><span class="chip">CodeAgent</span></div>
+        </div>
+        <div class="igroup">
+          <div class="gh"><i style="background:var(--violet)"></i>扩展与文件采集<span class="cnt">2</span></div>
+          <div class="chips"><span class="chip">TRAE</span><span class="chip">WorkBuddy</span></div>
+        </div>
+        <p class="none" hidden style="grid-column:1/-1;color:var(--ink-3);font-size:13px">没有匹配的平台，换个关键词试试。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 加入项目 ================= -->
+<section class="band" id="join">
+  <div class="wrap band-in">
+    <h2>加入 Agent Insight 项目</h2>
+    <p>Agent Insight 由 openEuler 社区 ANSE SIG 维护，代码托管在 AtomGit。ANSE SIG（AI-Native Software Engineering SIG）基于 AI 原生软件工程范式，为企业级软件交付提供可控、可靠、可演进的解决方案。</p>
+    <div class="band-cta">
+      <a class="btn btn-white" href="install.html">安装体验</a>
+      <a class="btn btn-ghostlight" href="dev.html">参与开发</a>
+      <a class="btn btn-ghostlight" href="docs.html">共建文档</a>
+    </div>
+    <div class="band-cards">
+      <a class="bcard" data-site="repo" href="#" target="_blank" rel="noopener">
+        <span class="k">REPOSITORY</span>
+        <b>AtomGit 仓库</b>
+        <span>源码、Releases、Roadmap 公示，Apache-2.0</span>
+      </a>
+      <a class="bcard" data-site="issues" href="#" target="_blank" rel="noopener">
+        <span class="k">GOOD FIRST ISSUE</span>
+        <b>认领第一个任务</b>
+        <span>从缺陷报告、文档修订、评估器实现开始</span>
+      </a>
+      <a class="bcard" href="docs.html#/quick-start">
+        <span class="k">DOCUMENTATION</span>
+        <b>五分钟快速上手</b>
+        <span>装好之后跑一个小任务，看见第一条链路</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <img src="assets/img/logo-light.svg" alt="Agent Insight" width="186" height="50">
+      <p>开源 AgentOps 平台:观察、评估、诊断并改进 Agent 执行。</p>
+    </div>
+    <div class="footer-grid5 footer-grid4">
+      <div>
+        <h4>关于 Agent Insight</h4>
+        <div class="footer-links"><a href="index.html">产品</a><a data-site="releases" href="#" target="_blank" rel="noopener">最新社区发行版</a></div>
+      </div>
+      <div>
+        <h4>社区</h4>
+        <div class="footer-links"><a data-site="repo" href="#" target="_blank" rel="noopener">源码仓</a><a href="dev.html">SIG 介绍</a></div>
+      </div>
+      <div>
+        <h4>支持与服务</h4>
+        <div class="footer-links"><a href="docs.html">文档</a><a href="docs.html#/faq">FAQ</a></div>
+      </div>
+      <div>
+        <h4>联系我们</h4>
+        <div class="footer-links"><a href="contact.html">互动与交流</a></div>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <span>© <span id="year">2026</span> Agent Insight contributors</span>
+      <span>Apache-2.0</span>
+      <span class="sp">openEuler ANSE SIG</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/site.js?v=34" defer></script>
+</body>
+</html>

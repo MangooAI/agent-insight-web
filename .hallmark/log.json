@@ -1,0 +1,105 @@
+[
+ {
+  "shape": "Showcase",
+  "theme": "custom brand-blue v7 (baked-text hero art + diagram carousel)",
+  "axes": "light/sans/cool",
+  "hero": "full-bleed generated art, text baked, buttons overlaid",
+  "nav": "left links + code dropdown",
+  "footer": "columns",
+  "imagery": "1 PIL-generated hero art + 3 SVG diagrams (arch/loop/formula) + 8 screenshots",
+  "photos": [],
+  "entry": "v7 per user: text-on-image, generated visuals, PPT diagrams in carousel",
+  "fingerprint": "art-hero+diagram-carousel+4-capability-cards+splits+walkthrough+chip17+band",
+  "sections": "hero art / diagram carousel / 4 capabilities / 2 splits / walkthrough / integrations / band / footer",
+  "signature": "slogan baked into generated key visual; PPT architecture and strategy diagrams as carousel slides",
+  "waived": [
+   "49b"
+  ],
+  "prompt": "text on one image; generated images no screenshots; nav left; code dropdown; features=观测验证防护改进; PPT diagrams in carousel",
+  "date": "2026-11-10",
+  "mode": "build"
+ },
+ {
+  "shape": "Showcase",
+  "theme": "custom brand-blue v6 (full-width generated banner rotator)",
+  "axes": "light/sans/cool",
+  "hero": "centered slogan + full-bleed 4-image rotator",
+  "nav": "bar, 56px logo, no home tab",
+  "footer": "columns",
+  "imagery": "4 PIL-composed wide banners (real screenshots on gradient) + 8 product screenshots",
+  "photos": [],
+  "entry": "v6: generated banner carousel per user request",
+  "fingerprint": "full-bleed-rotator+key-capability-cards+two-splits+walkthrough+chip-index17+navy-band",
+  "sections": "slogan / banner rotator / key capabilities / 2 showcase splits / walkthrough / integrations / join band / footer",
+  "signature": "wide generated banners with screenshot panel and agent-topology art",
+  "waived": [
+   "49b",
+   "79"
+  ],
+  "prompt": "full-width banner carousel with generated images; logo bigger; PPT-consistent capabilities; smaller slogan",
+  "date": "2026-11-10",
+  "mode": "build"
+ },
+ {
+  "shape": "Showcase",
+  "theme": "custom brand-blue v5 (official PPT copy + 8 real screenshots + hero rotator)",
+  "axes": "light/sans/cool",
+  "hero": "banner with 3-image rotator",
+  "nav": "bar, logo-home, no home tab",
+  "footer": "columns",
+  "imagery": "8 screenshots from the official film pptx",
+  "photos": [],
+  "entry": "v5: PPT-driven copy and imagery",
+  "fingerprint": "rotator-hero+feature-grid+two-splits+walkthrough+chip-index+navy-band",
+  "sections": "hero rotator / features / 2 showcase splits / walkthrough / integrations / join band / footer",
+  "signature": "crossfading product captures with fact captions, official slogan headline",
+  "waived": [
+   "49b",
+   "79"
+  ],
+  "prompt": "use PPT assets and copy; remove home tab, tag pill, stat cards; rotating hero banner",
+  "date": "2026-11-10",
+  "mode": "build"
+ },
+ {
+  "shape": "Showcase",
+  "theme": "custom brand-blue (Mindspore/openEuler register), replaced Cobalt after user feedback",
+  "axes": "light/sans/cool",
+  "hero": "banner",
+  "nav": "bar",
+  "footer": "columns",
+  "imagery": "screenshots of the real product (5, user-supplied pptx)",
+  "photos": [],
+  "entry": "index-install-dev-docs portal v4",
+  "fingerprint": "hero+stats+feature-grid+two-splits+walkthrough+chip-index+navy-band",
+  "sections": "hero / stats / features / 2 showcase splits / walkthrough / integrations / join band / footer",
+  "signature": "hero screenshot card floating above a blue gradient with two fact chips",
+  "waived": [
+   "49b",
+   "79"
+  ],
+  "prompt": "Agent Insight portal, references openEuler and MindSpore, brand assets in D:/AllAgent/sucai",
+  "date": "2026-11-10",
+  "mode": "build"
+ },
+ {
+  "shape": "Bento Grid",
+  "theme": "cobalt",
+  "axes": "light/grotesk-sans/cool",
+  "hero": "banner",
+  "nav": "slab",
+  "footer": "letter close",
+  "imagery": "screenshots of the real product (5, user-supplied pptx)",
+  "photos": [],
+  "entry": "index-install-dev-docs portal for Agent Insight",
+  "fingerprint": "bento+pinned-walkthrough+index+figures+graphite-band",
+  "sections": "hero / bento capabilities / pinned walkthrough (long image) / integration index / figures band / graphite close / footer",
+  "signature": "ASCII field mapping raw traffic into resolved diagnoses behind the hero",
+  "waived": [
+   "49b"
+  ],
+  "prompt": "Agent Insight product portal redesign, openEuler and MindSpore as references, brand assets in D:/AllAgent/sucai",
+  "date": "2026-11-09",
+  "mode": "build"
+ }
+]

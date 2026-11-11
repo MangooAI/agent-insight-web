@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#2457E2">
+<title>文档 · Agent Insight</title>
+<meta name="description" content="Agent Insight 中文文档：入门教程、操作指南、参考文档与概念原理，支持全文搜索。">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Agent Insight">
+<meta property="og:title" content="文档 · Agent Insight">
+<meta property="og:description" content="Agent Insight 中文文档：入门教程、操作指南、参考文档与概念原理，支持全文搜索。">
+<meta property="og:image" content="assets/img/og-cover.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="assets/css/site.css?v=43">
+</head>
+<body data-page="docs">
+<a class="sr-only" href="#main">跳到正文</a>
+
+<nav class="nav" aria-label="主导航">
+  <div class="wrap nav-in">
+    <a class="nav-logo" href="index.html" aria-label="Agent Insight 首页"><img src="assets/img/logo.svg" alt="Agent Insight" width="201" height="40"></a>
+    <div class="nav-links"><a data-nav="home" href="index.html">首页</a><a data-nav="install" href="install.html">安装</a><a data-nav="dev" href="dev.html">社区</a><a data-nav="docs" href="docs.html">文档</a><a data-nav="contact" href="contact.html">联系我们</a></div>
+    <div class="nav-right">
+      <a class="btn btn-ghost btn-sm nav-repo" data-site="repo" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg>AtomGit</a>
+      <button type="button" class="nav-burger" aria-label="打开菜单" aria-expanded="false" aria-controls="mMenu"><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="m-menu" id="mMenu">
+  <a class="m-link" data-nav="home" href="index.html">首页</a><a class="m-link" data-nav="install" href="install.html">安装</a><a class="m-link" data-nav="dev" href="dev.html">社区</a><a class="m-link" data-nav="docs" href="docs.html">文档</a><a class="m-link" data-nav="contact" href="contact.html">联系我们</a>
+  <div class="m-actions">
+    <a class="btn btn-ghost" data-site="repo" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg>AtomGit 代码仓</a>
+  </div>
+</div>
+
+<main id="main" class="docs-shell">
+  <div class="docs-bar">
+    <button type="button" class="db-btn" id="docsMenuBtn" aria-label="打开文档目录"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg><span>目录</span></button>
+    <span class="db-title" id="docBarTitle">文档</span>
+    <button type="button" class="db-btn" data-open-search aria-label="搜索文档"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button>
+  </div>
+  <div class="docs-layout">
+    <aside class="docs-side" id="docsSide" aria-label="文档目录">
+      <div class="ds-head"><b>文档目录</b><button type="button" class="db-btn" id="docsMenuClose" aria-label="关闭目录"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+      <button type="button" class="ds-search" data-open-search><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><span>搜索文档</span><kbd>/</kbd></button>
+      <a class="docs-home-link" href="#/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>文档首页</a>
+      <nav class="docs-tree" id="docTree" aria-label="文档分组"></nav>
+    </aside>
+    <div class="docs-overlay" id="docsOverlay"></div>
+    <article class="docs-main" id="docMain"><div class="md-loading"><span class="spin"></span>加载中…</div></article>
+    <aside class="docs-toc" id="docToc" aria-label="本页目录"></aside>
+  </div>
+</main>
+<div class="spal" id="searchPal" role="dialog" aria-modal="true" aria-label="搜索文档" hidden>
+  <div class="sp-box">
+    <div class="sp-input"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      <input id="spInput" type="search" placeholder="搜索文档标题与正文，如 Trace、评估器、Docker" autocomplete="off" aria-label="搜索关键词">
+      <button type="button" class="sp-close" id="spClose">取消</button></div>
+    <div class="sp-status" id="spStatus"></div>
+    <div class="sp-list" id="spList" role="listbox"></div>
+    <div class="sp-foot"><span><kbd>↑</kbd><kbd>↓</kbd> 选择</span><span><kbd>Enter</kbd> 打开</span><span><kbd>Esc</kbd> 关闭</span><span class="r"><kbd>/</kbd> 或 <kbd>Ctrl</kbd>+<kbd>K</kbd> 随时唤起</span></div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <a class="footer-logo" href="index.html" aria-label="Agent Insight 首页"><img src="assets/img/logo.svg" alt="Agent Insight" width="231" height="46" loading="lazy"></a>
+      <p>开源 AgentOps 平台：观测、评测、诊断并持续改进 Agent 执行。</p>
+    </div>
+    <div class="footer-grid">
+      <div><h4>产品</h4><div class="footer-links"><a href="index.html">产品介绍</a><a href="install.html">安装</a><a data-site="releases" href="#" target="_blank" rel="noopener">最新发行版</a></div></div>
+      <div><h4>社区</h4><div class="footer-links"><a data-site="repo" href="#" target="_blank" rel="noopener">源码仓</a><a href="dev.html">SIG 介绍</a><a data-site="issues" href="#" target="_blank" rel="noopener">Issue</a></div></div>
+      <div><h4>支持与服务</h4><div class="footer-links"><a href="docs.html">文档</a><a href="docs.html#/quick-start">快速上手</a><a href="docs.html#/faq">常见问题</a></div></div>
+      <div><h4>联系我们</h4><div class="footer-links"><a href="contact.html">互动与交流</a></div></div>
+    </div>
+    <div class="footer-legal">
+      <span>© <span id="year">2026</span> Agent Insight contributors</span>
+      <span>Apache-2.0</span>
+      <span class="sp">openEuler ANSE SIG</span>
+    </div>
+  </div>
+</footer>
+<button type="button" class="to-top" aria-label="回到顶部"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+<script src="assets/js/site.js?v=43" defer></script>
+<script src="assets/js/docs.js?v=43" defer></script>
+</body>
+</html>

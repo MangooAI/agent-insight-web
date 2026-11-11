@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>安装，Agent Insight</title>
+<meta name="description" content="安装 Agent Insight:从 AtomGit 官方代码仓获取,支持 npx 一键安装、Docker 与 OpenShift 部署、源码构建。安装步骤由仓库 Markdown 文档驱动。">
+<link rel="icon" href="assets/img/logo-light.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css?v=31">
+</head>
+<body data-page="install">
+
+<nav class="nav" aria-label="主导航">
+  <div class="wrap nav-in">
+    <a class="nav-logo" href="index.html" aria-label="Agent Insight 首页">
+      <img src="assets/img/logo-light.svg" alt="Agent Insight" width="164" height="44">
+    </a>
+    <div class="nav-links">
+      <a data-nav="install" href="install.html">安装</a>
+      <a data-nav="dev" href="dev.html">社区</a>
+      <a data-nav="docs" href="docs.html">文档</a>
+      <a data-nav="contact" href="contact.html">联系我们</a>
+    </div>
+    <div class="nav-right">
+      <div class="nav-drop">
+        <button type="button" class="nav-drop-btn" aria-haspopup="true">代码
+          <svg class="caret" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="nav-drop-menu">
+          <a data-site="repo" href="#" target="_blank" rel="noopener">AtomGit 仓库</a>
+        </div>
+      </div>
+      <button class="nav-burger" aria-label="打开菜单"><i></i><i></i></button>
+    </div>
+  </div>
+</nav>
+
+<header class="page-head">
+  <div class="wrap page-head-in">
+    <h1>安装</h1>
+    <p class="lede">一条命令启动服务，三种部署方式任选，执行数据全部留在你自己的机器上。</p>
+    <div class="meta-line">
+      <span>运行要求 <b>Node.js 20.9+</b></span>
+      <span>默认端口 <b>3000</b></span>
+      <span>数据库 <b>SQLite，零依赖</b></span>
+      <span>协议 <b>Apache-2.0</b></span>
+    </div>
+  </div>
+</header>
+
+<section class="sec" aria-label="获取方式">
+  <div class="wrap">
+    <div class="sec-head left">
+      <h2>三种获取方式</h2>
+      <p>版本与产物以 AtomGit Releases 页面为准；安装步骤直接渲染仓库 Markdown 文档，仓库更新，本页同步。</p>
+    </div>
+    <div class="methods">
+      <div class="method reveal">
+        <span class="k">METHOD 01 · 推荐</span>
+        <h3>npm 一键安装</h3>
+        <p>无需克隆仓库，安装器自动完成依赖与初始化，并引导接入第一个 Agent 平台。</p>
+        <a class="btn btn-blue" href="#panel-quick">快速开始</a>
+      </div>
+      <div class="method reveal" data-d="1">
+        <span class="k">METHOD 02 · 容器</span>
+        <h3>Docker 镜像</h3>
+        <p>适合服务器与内网环境，数据卷持久化到宿主机，升级时保留历史数据。</p>
+        <a class="btn btn-line" href="#panel-docker">Docker 部署</a>
+      </div>
+      <div class="method reveal" data-d="2">
+        <span class="k">METHOD 03 · AtomGit</span>
+        <h3>官方代码仓</h3>
+        <p>发行版、源码、Issue 与 PR 均托管于 AtomGit，可克隆仓库或下载 Release 产物。</p>
+        <a class="btn btn-line" data-site="releases" href="#" target="_blank" rel="noopener">前往 Releases</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-soft" aria-label="安装步骤">
+  <div class="wrap">
+    <div class="sec-head left">
+      <h2>安装步骤</h2>
+      <p>以下内容来自 AtomGit 仓库 docs/zh 下的 Markdown 文档。</p>
+    </div>
+
+    <div data-switch>
+      <div class="seg" role="tablist" aria-label="安装方式">
+        <button class="tab" role="tab" id="tab-quick" aria-controls="panel-quick" aria-selected="true">快速开始</button>
+        <button class="tab" role="tab" id="tab-docker" aria-controls="panel-docker" aria-selected="false" tabindex="-1">Docker 部署</button>
+        <button class="tab" role="tab" id="tab-openshift" aria-controls="panel-openshift" aria-selected="false" tabindex="-1">OpenShift 部署</button>
+        <button class="tab" role="tab" id="tab-source" aria-controls="panel-source" aria-selected="false" tabindex="-1">源码构建</button>
+      </div>
+      <div class="switch-panel" id="panel-quick" role="tabpanel" aria-labelledby="tab-quick">
+        <div class="md-card" data-md="content/docs/tutorial/platform/01-quick-start.md"></div>
+      </div>
+      <div class="switch-panel" id="panel-docker" role="tabpanel" aria-labelledby="tab-docker" hidden>
+        <div class="md-card" data-md="content/install/deploy-docker.md"></div>
+      </div>
+      <div class="switch-panel" id="panel-openshift" role="tabpanel" aria-labelledby="tab-openshift" hidden>
+        <div class="md-card" data-md="content/install/deploy-openshift.md"></div>
+      </div>
+      <div class="switch-panel" id="panel-source" role="tabpanel" aria-labelledby="tab-source" hidden>
+        <div class="md-card" data-md="content/install/source.md"></div>
+      </div>
+    </div>
+
+    <div class="docs-nav2">
+      <a class="dnav" href="docs.html#/view-traces">
+        <span class="k">装好之后</span>
+        <span class="t">查看执行链路</span>
+      </a>
+      <a class="dnav next" href="docs.html#/faq">
+        <span class="k">遇到问题</span>
+        <span class="t">常见问题</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" aria-label="数据与升级">
+  <div class="wrap">
+    <div class="sec-head left">
+      <h2>数据与升级</h2>
+      <p>执行记录与任务数据默认保存在本地 SQLite，备份与升级都不需要停机迁移服务。</p>
+    </div>
+    <div class="methods">
+      <div class="method reveal"><span class="k">DATA</span><h3>数据存放</h3><p>默认目录 <b>~/.agent-insight/data</b>,核心为 SQLite 数据库 witty_insight.db;Docker 部署挂载同一目录即可持久化。</p></div>
+      <div class="method reveal" data-d="1"><span class="k">UPGRADE</span><h3>升级与回滚</h3><p>npm 方式重新运行安装命令；Docker 方式拉取新标签后重建容器，数据卷保留历史数据。</p></div>
+      <div class="method reveal" data-d="2"><span class="k">OFFLINE</span><h3>离线环境</h3><p>平台本体自托管；内网通过 docker save 与 docker load 流转镜像，模型推理走内网网关。</p></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <img src="assets/img/logo-light.svg" alt="Agent Insight" width="186" height="50">
+      <p>开源 AgentOps 平台:观察、评估、诊断并改进 Agent 执行。</p>
+    </div>
+    <div class="footer-grid5 footer-grid4">
+      <div>
+        <h4>关于 Agent Insight</h4>
+        <div class="footer-links"><a href="index.html">产品</a><a data-site="releases" href="#" target="_blank" rel="noopener">最新社区发行版</a></div>
+      </div>
+      <div>
+        <h4>社区</h4>
+        <div class="footer-links"><a data-site="repo" href="#" target="_blank" rel="noopener">源码仓</a><a href="dev.html">SIG 介绍</a></div>
+      </div>
+      <div>
+        <h4>支持与服务</h4>
+        <div class="footer-links"><a href="docs.html">文档</a><a href="docs.html#/faq">FAQ</a></div>
+      </div>
+      <div>
+        <h4>联系我们</h4>
+        <div class="footer-links"><a href="contact.html">互动与交流</a></div>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <span>© <span id="year">2026</span> Agent Insight contributors</span>
+      <span>Apache-2.0</span>
+      <span class="sp">openEuler ANSE SIG</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/site.js?v=31" defer></script>
+</body>
+</html>

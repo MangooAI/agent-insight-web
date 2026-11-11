@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1020" viewBox="0 0 1440 1020" role="img" aria-labelledby="title desc" font-family="Noto Sans CJK SC, Source Han Sans SC, Microsoft YaHei, PingFang SC, sans-serif">
+<title id="title">五模块认知归因流程图</title><desc id="desc">输入、风险预检、五模块认知归因（逐步骤分析）、根因聚合和结构化诊断报告。</desc>
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="0.52" stop-color="#F1F7FF"/><stop offset="1" stop-color="#EAF5FA"/></linearGradient>
+ <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F7FAFF"/><stop offset="1" stop-color="#E8F1FF"/></linearGradient>
+ <linearGradient id="risk" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#EAF3FF"/><stop offset="1" stop-color="#DFEFFF"/></linearGradient>
+ <linearGradient id="out" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#2765DF"/><stop offset="1" stop-color="#5754D9"/></linearGradient>
+ <marker id="arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M0 0 10 5 0 10 2.7 5Z" fill="#6297E7"/></marker>
+</defs>
+<rect x="0" y="0" width="1440" height="1020" rx="0" fill="url(#bg)" stroke="none" stroke-width="1"/>
+<path d="M0 90 Q255 -45 495 0 L0 0Z" fill="#E7F0FF" opacity=".8"/><path d="M1440 760 Q1270 920 920 1020H1440Z" fill="#DDEDFC" opacity=".65"/><path d="M0 890 Q230 1000 480 1020H0Z" fill="#DCEBFC" opacity=".65"/>
+<path d="M720 112 L720 157" fill="none" stroke="#6297E7" stroke-width="3.4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M720 251 L720 296" fill="none" stroke="#6297E7" stroke-width="3.4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M720 568 L720 614" fill="none" stroke="#6297E7" stroke-width="3.4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M720 794 L720 855" fill="none" stroke="#6297E7" stroke-width="3.4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="522" y="30" width="396" height="82" rx="22" fill="#FFFFFF" stroke="#B9D6FC" stroke-width="1.7"/>
+<g transform="translate(623 51) scale(0.85)" color="#397CE6" fill="none" stroke="#397CE6" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 3v23m-9-9 9 9 9-9M6 25v14a3 3 0 0 0 3 3h30a3 3 0 0 0 3-3V25M6 31h10l3 5h10l3-5h10"/></g>
+<text x="755" y="82" font-size="31" fill="#17345A" font-weight="600" text-anchor="middle">输入</text>
+<rect x="190" y="160" width="1060" height="91" rx="22" fill="url(#risk)" stroke="#BBD7F9" stroke-width="1.5"/>
+<g transform="translate(596 184) scale(0.9)" color="#3076E1" fill="none" stroke="#3076E1" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 4 41 11v12c0 10-7 17-17 22C14 40 7 33 7 23V11L24 4Z"/><path d="m16 24 6 6 11-13"/></g>
+<text x="762" y="217" font-size="31" fill="#17345A" font-weight="600" text-anchor="middle">风险预检</text>
+<rect x="76" y="300" width="1288" height="268" rx="27" fill="url(#panel)" stroke="#C6D9F5" stroke-width="1.5"/>
+<text x="720" y="354" font-size="33" fill="#17345A" font-weight="700" text-anchor="middle">五模块认知归因</text>
+<text x="720" y="387" font-size="21" fill="#536D8E" font-weight="500" text-anchor="middle">（逐步骤分析）</text>
+<rect x="100" y="407" width="240" height="136" rx="17" fill="#FFFFFF" stroke="#D6E2F3" stroke-width="1.4"/>
+<rect x="193" y="421" width="54" height="54" rx="15" fill="#E8F2FF" stroke="none" stroke-width="1"/>
+<g transform="translate(202 430) scale(0.75)" color="#3277DB" fill="none" stroke="#3277DB" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="m24 4 19 10-19 10L5 14 24 4Z M5 24l19 10 19-10M5 34l19 10 19-10"/></g>
+<text x="220" y="505" font-size="27" fill="#17345A" font-weight="700" text-anchor="middle">记忆</text>
+<text x="220" y="530" font-size="18" fill="#577092" font-weight="500" text-anchor="middle">（LLM）</text>
+<rect x="350" y="407" width="240" height="136" rx="17" fill="#FFFFFF" stroke="#D6E2F3" stroke-width="1.4"/>
+<rect x="443" y="421" width="54" height="54" rx="15" fill="#EEEAFE" stroke="none" stroke-width="1"/>
+<g transform="translate(452 430) scale(0.75)" color="#6559D5" fill="none" stroke="#6559D5" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M39 20a15 15 0 0 0-26-10l-7 8m0-12v12h12M9 28a15 15 0 0 0 26 10l7-8m0 12V30H30"/><circle cx="24" cy="24" r="3" fill="currentColor" stroke="none"/></g>
+<text x="470" y="505" font-size="27" fill="#17345A" font-weight="700" text-anchor="middle">反思</text>
+<text x="470" y="530" font-size="18" fill="#577092" font-weight="500" text-anchor="middle">（LLM）</text>
+<rect x="600" y="407" width="240" height="136" rx="17" fill="#FFFFFF" stroke="#D6E2F3" stroke-width="1.4"/>
+<rect x="693" y="421" width="54" height="54" rx="15" fill="#E8F2FF" stroke="none" stroke-width="1"/>
+<g transform="translate(702 430) scale(0.75)" color="#347BDE" fill="none" stroke="#347BDE" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="6" width="32" height="37" rx="5"/><path d="M16 4v6m16-6v6M8 16h32m-24 9 3 3 5-5m-8 11 3 3 5-5m5-6h5m-5 10h5"/></g>
+<text x="720" y="505" font-size="27" fill="#17345A" font-weight="700" text-anchor="middle">规划</text>
+<text x="720" y="530" font-size="18" fill="#577092" font-weight="500" text-anchor="middle">（LLM）</text>
+<rect x="850" y="407" width="240" height="136" rx="17" fill="#FFFFFF" stroke="#D6E2F3" stroke-width="1.4"/>
+<rect x="943" y="421" width="54" height="54" rx="15" fill="#EFEAFF" stroke="none" stroke-width="1"/>
+<g transform="translate(952 430) scale(0.75)" color="#6C58D0" fill="none" stroke="#6C58D0" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="m27 4-15 23h12l-3 17 15-24H24l3-16Z"/></g>
+<text x="970" y="505" font-size="27" fill="#17345A" font-weight="700" text-anchor="middle">动作</text>
+<text x="970" y="530" font-size="18" fill="#577092" font-weight="500" text-anchor="middle">（规则）</text>
+<rect x="1100" y="407" width="240" height="136" rx="17" fill="#FFFFFF" stroke="#D6E2F3" stroke-width="1.4"/>
+<rect x="1193" y="421" width="54" height="54" rx="15" fill="#E3F5F7" stroke="none" stroke-width="1"/>
+<g transform="translate(1202 430) scale(0.75)" color="#168C9E" fill="none" stroke="#168C9E" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="m24 4 17 10v20L24 44 7 34V14L24 4Zm0 20 17-10M24 24 7 14m17 10v20M15.5 9l17 10"/></g>
+<text x="1220" y="505" font-size="27" fill="#17345A" font-weight="700" text-anchor="middle">环境</text>
+<text x="1220" y="530" font-size="18" fill="#577092" font-weight="500" text-anchor="middle">（规则）</text>
+<rect x="76" y="618" width="1288" height="176" rx="26" fill="#F4F8FF" stroke="#C6D9F5" stroke-width="1.5"/>
+<text x="720" y="668" font-size="32" fill="#17345A" font-weight="700" text-anchor="middle">根因聚合</text>
+<rect x="140" y="694" width="328" height="76" rx="15" fill="#FFFFFF" stroke="#CFDFF5" stroke-width="1.4"/>
+<g transform="translate(160 714) scale(0.75)" color="#477FD7" fill="none" stroke="#477FD7" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 12h24M17 24h24M17 36h24"/><circle cx="8" cy="12" r="2"/><circle cx="8" cy="24" r="2"/><circle cx="8" cy="36" r="2"/></g>
+<text x="321" y="741" font-size="23" fill="#23466F" font-weight="600" text-anchor="middle">问题列表</text>
+<path d="M477 732 L545 732" fill="none" stroke="#6297E7" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="556" y="694" width="328" height="76" rx="15" fill="#FFFFFF" stroke="#CFDFF5" stroke-width="1.4"/>
+<g transform="translate(576 714) scale(0.75)" color="#477FD7" fill="none" stroke="#477FD7" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 13 11 34m13-21 13 21M15 37h18"/><circle cx="24" cy="9" r="5"/><circle cx="9" cy="38" r="5"/><circle cx="39" cy="38" r="5"/></g>
+<text x="737" y="741" font-size="23" fill="#23466F" font-weight="600" text-anchor="middle">因果关系分析</text>
+<path d="M893 732 L961 732" fill="none" stroke="#6297E7" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="972" y="694" width="328" height="76" rx="15" fill="#FFFFFF" stroke="#CFDFF5" stroke-width="1.4"/>
+<g transform="translate(992 714) scale(0.75)" color="#477FD7" fill="none" stroke="#477FD7" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="17"/><circle cx="24" cy="24" r="9"/><circle cx="24" cy="24" r="2"/><path d="M24 2v5m0 34v5M2 24h5m34 0h5"/></g>
+<text x="1153" y="741" font-size="23" fill="#23466F" font-weight="600" text-anchor="middle">找最早根因问题</text>
+<rect x="400" y="858" width="640" height="106" rx="23" fill="url(#out)" stroke="none" stroke-width="1"/>
+<g transform="translate(459 888) scale(1.0)" color="#FFFFFF" fill="none" stroke="#FFFFFF" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4h19l9 9v29a2 2 0 0 1-2 2H11a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z M30 4v10h9M16 21h15M16 28h15M16 35h9"/></g>
+<text x="752" y="925" font-size="35" fill="#FFFFFF" font-weight="700" text-anchor="middle">结构化诊断报告</text>
+</svg>

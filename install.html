@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#2457E2">
+<title>安装 · Agent Insight</title>
+<meta name="description" content="使用 npm 安装 Agent Insight：npx agent-insight install 一键安装与初始化，npx agent-insight start 启动服务。">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Agent Insight">
+<meta property="og:title" content="安装 · Agent Insight">
+<meta property="og:description" content="使用 npm 安装 Agent Insight：npx agent-insight install 一键安装与初始化，npx agent-insight start 启动服务。">
+<meta property="og:image" content="assets/img/og-cover.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="assets/css/site.css?v=43">
+</head>
+<body data-page="install">
+<a class="sr-only" href="#main">跳到正文</a>
+
+<nav class="nav" aria-label="主导航">
+  <div class="wrap nav-in">
+    <a class="nav-logo" href="index.html" aria-label="Agent Insight 首页"><img src="assets/img/logo.svg" alt="Agent Insight" width="201" height="40"></a>
+    <div class="nav-links"><a data-nav="home" href="index.html">首页</a><a data-nav="install" href="install.html">安装</a><a data-nav="dev" href="dev.html">社区</a><a data-nav="docs" href="docs.html">文档</a><a data-nav="contact" href="contact.html">联系我们</a></div>
+    <div class="nav-right">
+      <a class="btn btn-ghost btn-sm nav-repo" data-site="repo" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg>AtomGit</a>
+      <button type="button" class="nav-burger" aria-label="打开菜单" aria-expanded="false" aria-controls="mMenu"><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="m-menu" id="mMenu">
+  <a class="m-link" data-nav="home" href="index.html">首页</a><a class="m-link" data-nav="install" href="install.html">安装</a><a class="m-link" data-nav="dev" href="dev.html">社区</a><a class="m-link" data-nav="docs" href="docs.html">文档</a><a class="m-link" data-nav="contact" href="contact.html">联系我们</a>
+  <div class="m-actions">
+    <a class="btn btn-ghost" data-site="repo" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg>AtomGit 代码仓</a>
+  </div>
+</div>
+
+<main id="main">
+<header class="page-head">
+  <div class="wrap">
+    <span class="eyebrow">安装</span>
+    <h1>一条 npm 命令，即可开始</h1>
+    <p class="lede">无需克隆仓库，安装器会自动完成依赖安装与初始化，并引导你接入第一个 Agent 平台。执行数据全部留在你自己的机器上。</p>
+    <div class="meta-line">
+      <span>运行要求 <b>Node.js 20.9+</b></span>
+      <span>默认端口 <b>3000</b></span>
+      <span>数据库 <b>SQLite，零依赖</b></span>
+      <span>协议 <b>Apache-2.0</b></span>
+    </div>
+  </div>
+</header>
+
+<section class="sec" aria-labelledby="steps-t">
+  <div class="wrap inst">
+    <div>
+      <h2 class="sr-only" id="steps-t">安装步骤</h2>
+      <ol class="isteps">
+        <li class="istep">
+          <h3>准备 Node.js 环境</h3>
+          <p>安装 Node.js 20.9 或更高版本（自带 npm），然后确认版本。</p>
+          <div class="code has-copy"><pre><code><span class="p">$ </span>node -v</code></pre><button type="button" class="copy-btn" data-copy="node -v" aria-label="复制命令"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><span>复制</span></button></div>
+        </li>
+        <li class="istep">
+          <h3>安装并初始化</h3>
+          <p>通过 npx 运行安装器，自动完成依赖安装与初始化，并引导接入第一个 Agent 平台。</p>
+          <div class="code has-copy"><pre><code><span class="p">$ </span>npx agent-insight install</code></pre><button type="button" class="copy-btn" data-copy="npx agent-insight install" aria-label="复制命令"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><span>复制</span></button></div>
+        </li>
+        <li class="istep">
+          <h3>启动服务</h3>
+          <p>启动 Agent Insight 服务，默认监听 3000 端口。</p>
+          <div class="code has-copy"><pre><code><span class="p">$ </span>npx agent-insight start</code></pre><button type="button" class="copy-btn" data-copy="npx agent-insight start" aria-label="复制命令"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><span>复制</span></button></div>
+        </li>
+        <li class="istep">
+          <h3>打开看板并登录</h3>
+          <p>在浏览器访问 <a href="http://localhost:3000" target="_blank" rel="noopener">http://localhost:3000</a>，输入邮箱即可登录，随后按页面上的“快速开始”完成模型注册与 Agent 接入。</p>
+          <div class="code has-copy"><pre><code>http://localhost:3000</code></pre><button type="button" class="copy-btn" data-copy="http://localhost:3000" aria-label="复制命令"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><span>复制</span></button></div>
+        </li>
+      </ol>
+    </div>
+    <aside>
+      <div class="aside-card">
+        <h3>常用命令</h3>
+        <table class="cmd-table">
+          <tr><td><code>npx agent-insight install</code></td><td>安装与初始化</td></tr>
+          <tr><td><code>npx agent-insight start</code></td><td>启动服务</td></tr>
+          <tr><td><code>npx agent-insight status</code></td><td>查看状态</td></tr>
+          <tr><td><code>npx agent-insight stop --port 3000</code></td><td>停止服务</td></tr>
+        </table>
+      </div>
+      <div class="aside-card">
+        <h3>数据与升级</h3>
+        <ul class="req">
+          <li>数据目录<b>~/.agent-insight/data</b></li>
+          <li>升级方式<b>重新运行安装命令</b></li>
+        </ul>
+        <p class="tip">版本与发布说明以 <a data-site="releases" href="#" target="_blank" rel="noopener">AtomGit Releases</a> 为准。</p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="sec sec-soft" aria-labelledby="next-t">
+  <div class="wrap">
+    <div class="sec-head left">
+      <span class="eyebrow">装好之后</span>
+      <h2 id="next-t">下一步做什么</h2>
+    </div>
+    <div class="lcards c4">
+      <a class="lcard" href="docs.html#/quick-start"><span class="k">入门教程</span><b>5 分钟上手</b><span class="d">注册模型、创建 Agent、完成接入，看到第一条链路</span></a>
+      <a class="lcard" href="docs.html#/view-traces"><span class="k">运行观测</span><b>查看执行链路</b><span class="d">逐层展开 Trace，定位每一步调用</span></a>
+      <a class="lcard" href="docs.html#/first-experiment"><span class="k">评估与实验</span><b>跑第一个评测实验</b><span class="d">用评估器量化 Agent 的效果与轨迹</span></a>
+      <a class="lcard" href="docs.html#/faq"><span class="k">遇到问题</span><b>常见问题</b><span class="d">安装、接入与数据上报的排查方法</span></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <a class="footer-logo" href="index.html" aria-label="Agent Insight 首页"><img src="assets/img/logo.svg" alt="Agent Insight" width="231" height="46" loading="lazy"></a>
+      <p>开源 AgentOps 平台：观测、评测、诊断并持续改进 Agent 执行。</p>
+    </div>
+    <div class="footer-grid">
+      <div><h4>产品</h4><div class="footer-links"><a href="index.html">产品介绍</a><a href="install.html">安装</a><a data-site="releases" href="#" target="_blank" rel="noopener">最新发行版</a></div></div>
+      <div><h4>社区</h4><div class="footer-links"><a data-site="repo" href="#" target="_blank" rel="noopener">源码仓</a><a href="dev.html">SIG 介绍</a><a data-site="issues" href="#" target="_blank" rel="noopener">Issue</a></div></div>
+      <div><h4>支持与服务</h4><div class="footer-links"><a href="docs.html">文档</a><a href="docs.html#/quick-start">快速上手</a><a href="docs.html#/faq">常见问题</a></div></div>
+      <div><h4>联系我们</h4><div class="footer-links"><a href="contact.html">互动与交流</a></div></div>
+    </div>
+    <div class="footer-legal">
+      <span>© <span id="year">2026</span> Agent Insight contributors</span>
+      <span>Apache-2.0</span>
+      <span class="sp">openEuler ANSE SIG</span>
+    </div>
+  </div>
+</footer>
+<button type="button" class="to-top" aria-label="回到顶部"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+<script src="assets/js/site.js?v=43" defer></script>
+</body>
+</html>

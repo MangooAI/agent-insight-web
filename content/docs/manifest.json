@@ -1,0 +1,338 @@
+[
+  {
+    "group": "入门教程",
+    "groupEn": "TUTORIALS",
+    "items": [
+      {
+        "id": "quick-start",
+        "title": "5 分钟上手",
+        "en": "",
+        "file": "tutorial/platform/01-quick-start.md"
+      },
+      {
+        "id": "example-walkthrough",
+        "title": "内置示例端到端走查",
+        "en": "",
+        "file": "tutorial/platform/02-example-walkthrough.md"
+      },
+      {
+        "id": "first-experiment",
+        "title": "跑通第一次评测",
+        "en": "",
+        "file": "tutorial/evaluation/01-first-experiment.md"
+      },
+      {
+        "id": "getting-started",
+        "title": "快速开始",
+        "en": "",
+        "file": "tutorial/reliability/agent-ras/01-getting-started.md"
+      },
+      {
+        "id": "agent-fault-injection-getting-started",
+        "title": "快速开始",
+        "en": "",
+        "file": "tutorial/reliability/agent-fault-injection/01-getting-started.md"
+      }
+    ]
+  },
+  {
+    "group": "操作指南",
+    "groupEn": "HOW-TO",
+    "items": [
+      {
+        "id": "deploy-docker",
+        "title": "用 Docker 部署服务端",
+        "en": "",
+        "file": "how-to/platform/deploy-docker.md"
+      },
+      {
+        "id": "deploy-openshift",
+        "title": "在 OpenShift 上部署服务端",
+        "en": "",
+        "file": "how-to/platform/deploy-openshift.md"
+      },
+      {
+        "id": "upgrade-and-rollback",
+        "title": "升级与回滚",
+        "en": "",
+        "file": "how-to/platform/upgrade-and-rollback.md"
+      },
+      {
+        "id": "backup-and-restore",
+        "title": "备份与恢复",
+        "en": "",
+        "file": "how-to/platform/backup-and-restore.md"
+      },
+      {
+        "id": "faq",
+        "title": "常见问题",
+        "en": "",
+        "file": "how-to/platform/faq.md"
+      },
+      {
+        "id": "model-registry",
+        "title": "模型注册",
+        "en": "",
+        "file": "how-to/platform/settings/model-registry.md"
+      },
+      {
+        "id": "access-control",
+        "title": "客户端安装",
+        "en": "",
+        "file": "how-to/platform/settings/access-control.md"
+      },
+      {
+        "id": "view-traces",
+        "title": "链路追踪",
+        "en": "",
+        "file": "how-to/observability/view-traces.md"
+      },
+      {
+        "id": "develop-trace-collector",
+        "title": "新增第三方Agent框架Trace采集开发方案",
+        "en": "",
+        "file": "how-to/observability/develop-trace-collector.md"
+      },
+      {
+        "id": "trae-integration",
+        "title": "Trae IDE 接入指南",
+        "en": "",
+        "file": "how-to/observability/trae-integration.md"
+      },
+      {
+        "id": "llamaindex-trace-collector",
+        "title": "LlamaIndex 采集器接入",
+        "en": "",
+        "file": "how-to/observability/llamaindex-trace-collector.md"
+      },
+      {
+        "id": "experiments",
+        "title": "实验",
+        "en": "",
+        "file": "how-to/evaluation/experiments.md"
+      },
+      {
+        "id": "datasets",
+        "title": "评测数据集",
+        "en": "",
+        "file": "how-to/evaluation/datasets.md"
+      },
+      {
+        "id": "develop-evaluator",
+        "title": "评估器开发指南",
+        "en": "",
+        "file": "how-to/evaluation/develop-evaluator.md"
+      },
+      {
+        "id": "deploy-services",
+        "title": "Benchmark 通用服务部署指南",
+        "en": "",
+        "file": "how-to/evaluation/benchmarks/deploy-services.md"
+      },
+      {
+        "id": "onboard-custom-benchmark",
+        "title": "自定义 Benchmark 接入指南",
+        "en": "",
+        "file": "how-to/evaluation/benchmarks/onboard-custom-benchmark.md"
+      },
+      {
+        "id": "generate",
+        "title": "Skill 生成",
+        "en": "",
+        "file": "how-to/optimization/skills/generate.md"
+      },
+      {
+        "id": "optimize",
+        "title": "Skill 优化",
+        "en": "",
+        "file": "how-to/optimization/skills/optimize.md"
+      },
+      {
+        "id": "manage",
+        "title": "Skills 管理",
+        "en": "",
+        "file": "how-to/optimization/skills/manage.md"
+      },
+      {
+        "id": "skill-workflow",
+        "title": "Skill 生成、评估与优化使用指南",
+        "en": "",
+        "file": "how-to/optimization/skills/skill-workflow.md"
+      },
+      {
+        "id": "diagnosis",
+        "title": "智能诊断",
+        "en": "",
+        "file": "how-to/diagnosis/agent-debug/diagnosis.md"
+      },
+      {
+        "id": "local-install-process",
+        "title": "Agent RAS：本机安装过程详解",
+        "en": "",
+        "file": "how-to/reliability/agent-ras/local-install-process.md"
+      },
+      {
+        "id": "run-injection",
+        "title": "故障注入与评测",
+        "en": "",
+        "file": "how-to/reliability/agent-fault-injection/run-injection.md"
+      }
+    ]
+  },
+  {
+    "group": "参考文档",
+    "groupEn": "REFERENCE",
+    "items": [
+      {
+        "id": "http-api",
+        "title": "HTTP 接口与用户身份",
+        "en": "",
+        "file": "reference/platform/http-api.md"
+      },
+      {
+        "id": "api-and-contracts",
+        "title": "API & Contracts",
+        "en": "",
+        "file": "reference/platform/api-and-contracts.md"
+      },
+      {
+        "id": "configuration",
+        "title": "运行配置参考",
+        "en": "",
+        "file": "reference/platform/configuration.md"
+      },
+      {
+        "id": "otlp-attribute-contract",
+        "title": "OTLP 属性契约 (FR-011)",
+        "en": "",
+        "file": "reference/observability/otlp-attribute-contract.md"
+      },
+      {
+        "id": "trace-ingestion",
+        "title": "Trace HTTP 接入",
+        "en": "",
+        "file": "reference/observability/trace-ingestion.md"
+      },
+      {
+        "id": "client-compatibility",
+        "title": "客户端版本与框架兼容性",
+        "en": "",
+        "file": "reference/observability/client-compatibility.md"
+      },
+      {
+        "id": "experiments-api",
+        "title": "实验 HTTP 接口",
+        "en": "",
+        "file": "reference/evaluation/experiments-api.md"
+      },
+      {
+        "id": "evaluator-output",
+        "title": "评估器运行与输出契约",
+        "en": "",
+        "file": "reference/evaluation/evaluator-output.md"
+      },
+      {
+        "id": "benchmark-protocol",
+        "title": "独立 Benchmark 评测协议",
+        "en": "",
+        "file": "reference/evaluation/benchmark-protocol.md"
+      },
+      {
+        "id": "fault-catalog",
+        "title": "内置故障覆盖矩阵",
+        "en": "",
+        "file": "reference/reliability/agent-fault-injection/fault-catalog.md"
+      },
+      {
+        "id": "client-control-api",
+        "title": "可靠性客户端与配置控制接口",
+        "en": "",
+        "file": "reference/reliability/client-control-api.md"
+      },
+      {
+        "id": "skills-api",
+        "title": "Skill 管理 HTTP 接口",
+        "en": "",
+        "file": "reference/optimization/skills-api.md"
+      }
+    ]
+  },
+  {
+    "group": "概念与原理",
+    "groupEn": "EXPLANATION",
+    "items": [
+      {
+        "id": "product-overview",
+        "title": "Agent Insight",
+        "en": "",
+        "file": "explanation/platform/product-overview.md"
+      },
+      {
+        "id": "architecture",
+        "title": "Agent-Insight 架构设计文档",
+        "en": "",
+        "file": "explanation/platform/architecture.md"
+      },
+      {
+        "id": "core-concepts",
+        "title": "核心概念",
+        "en": "",
+        "file": "explanation/platform/core-concepts.md"
+      },
+      {
+        "id": "developer-index",
+        "title": "Agent-Insight — 开发者指南",
+        "en": "",
+        "file": "explanation/platform/developer-index.md"
+      },
+      {
+        "id": "positioning",
+        "title": "Positioning",
+        "en": "",
+        "file": "explanation/platform/positioning.md"
+      },
+      {
+        "id": "overview",
+        "title": "评估与实验",
+        "en": "",
+        "file": "explanation/evaluation/overview.md"
+      },
+      {
+        "id": "diagnosis-loop-analysis",
+        "title": "AgentDebug 轨迹诊断现状与历史循环漏检分析",
+        "en": "",
+        "file": "explanation/diagnosis/agent-debug/diagnosis-loop-analysis.md"
+      },
+      {
+        "id": "workbench-overview",
+        "title": "Skill 工作台",
+        "en": "",
+        "file": "explanation/optimization/skills/workbench-overview.md"
+      },
+      {
+        "id": "generation-pipeline",
+        "title": "Skill 生成：工作原理、流水线与能力边界",
+        "en": "",
+        "file": "explanation/optimization/skills/generation-pipeline.md"
+      },
+      {
+        "id": "optimization-loop",
+        "title": "Skill 优化：工作原理、闭环验证机制与能力边界",
+        "en": "",
+        "file": "explanation/optimization/skills/optimization-loop.md"
+      },
+      {
+        "id": "agent-ras-architecture",
+        "title": "Agent RAS 整体架构",
+        "en": "",
+        "file": "explanation/reliability/agent-ras/architecture.md"
+      },
+      {
+        "id": "agent-fault-injection-architecture",
+        "title": "Agent Fault Injection — 架构",
+        "en": "",
+        "file": "explanation/reliability/agent-fault-injection/architecture.md"
+      }
+    ]
+  }
+]

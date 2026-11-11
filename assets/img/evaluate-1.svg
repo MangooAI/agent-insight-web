@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="800" viewBox="0 0 2400 800" role="img" aria-label="Agent Insight 创建评测实验七步流程">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset=".55" stop-color="#F5F9FF"/><stop offset="1" stop-color="#EAF5FF"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#A8D3FF" stop-opacity=".53"/><stop offset="1" stop-color="#A8D3FF" stop-opacity="0"/></radialGradient>
+ <linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#83B8FF"/><stop offset="1" stop-color="#A0B8EA"/></linearGradient>
+ <linearGradient id="surface" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#F8FBFF"/></linearGradient>
+ <filter id="shadow" x="-30%" y="-35%" width="160%" height="200%"><feDropShadow dx="0" dy="15" stdDeviation="17" flood-color="#5481B9" flood-opacity=".14"/></filter>
+ <filter id="softshadow" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="9" stdDeviation="11" flood-color="#4679B4" flood-opacity=".20"/></filter>
+ <pattern id="dots" width="34" height="34" patternUnits="userSpaceOnUse"><circle cx="1.5" cy="1.5" r="1.7" fill="#A9C8F3" opacity=".42"/></pattern>
+</defs>
+<rect width="2400" height="800" fill="url(#bg)"/>
+<ellipse cx="1980" cy="35" rx="750" ry="430" fill="url(#glow)" opacity=".35"/>
+<ellipse cx="110" cy="825" rx="760" ry="460" fill="url(#glow)" opacity=".28"/>
+<path d="M0 695 C380 625 510 770 900 708 C1310 630 1580 750 1900 687 C2120 643 2260 675 2400 640V800H0Z" fill="#BFDFFF" opacity=".14"/>
+<path d="M0 743 C420 683 610 807 1035 748 C1410 693 1670 785 1985 730 C2140 705 2270 712 2400 701" fill="none" stroke="#9DC8F7" stroke-width="2" opacity=".23"/>
+<rect x="2010" y="0" width="390" height="210" fill="url(#dots)" opacity=".66"/>
+<circle cx="107" cy="98" r="21" fill="#E5F2FF"/><path d="M95 98L107 86L119 98L107 110Z" fill="#3E8EED"/><path d="M107 85L119 97L107 104L95 97Z" fill="#56CAF3"/>
+<text x="149" y="108" font-family="Noto Sans CJK SC, sans-serif" font-size="31" font-weight="700" fill="#2A69B9" letter-spacing="1">Agent Insight</text>
+<rect x="93" y="135" width="340" height="4" rx="2" fill="#D9E8FC"/>
+<rect x="93" y="135" width="130" height="4" rx="2" fill="#3F91F6"/>
+<text x="91" y="212" font-family="Noto Sans CJK SC, sans-serif" font-size="64" font-weight="800" fill="#16365E">创建评测实验</text>
+<text x="94" y="264" font-family="Noto Sans CJK SC, sans-serif" font-size="27" fill="#6885A5">选择配置、执行实验、查看评测结果，一条流程完成端到端评测</text>
+<rect x="1993" y="174" width="310" height="64" rx="32" fill="#E7F2FF" stroke="#C7E2FF" stroke-width="2"/>
+<circle cx="2031" cy="206" r="9" fill="#43A6F6"/>
+<text x="2062" y="217" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#2975BB">7 STEPS · 全流程</text>
+<!-- group outlines -->
+<rect x="69" y="314" width="1610" height="361" rx="34" fill="#EDF6FF" fill-opacity=".45" stroke="#ADD2F8" stroke-width="2.5" stroke-dasharray="10 10"/>
+<rect x="1685" y="314" width="650" height="361" rx="34" fill="#EAF9FC" fill-opacity=".45" stroke="#B9DFE9" stroke-width="2.5" stroke-dasharray="10 10"/>
+<rect x="109" y="299" width="268" height="42" rx="21" fill="#DDEEFF"/>
+<text x="243" y="328" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="700" fill="#377CC4" text-anchor="middle">实验配置 · 01—05</text>
+<rect x="1732" y="299" width="288" height="42" rx="21" fill="#DDF4F6"/>
+<text x="1876" y="328" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="700" fill="#238F9F" text-anchor="middle">执行与分析 · 06—07</text>
+
+<path d="M368 495H408" stroke="#7BA9DA" stroke-width="4" stroke-linecap="round"/><path d="M402 487L412 495L402 503" stroke="#5E9FDF" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<g filter="url(#shadow)"><rect x="100" y="355" width="264" height="281" rx="26" fill="url(#surface)" stroke="#D9E7F7" stroke-width="2"/></g>
+ <path d="M123 359H341" stroke="#3A83F6" stroke-width="4" stroke-opacity=".48" stroke-linecap="round"/>
+ <rect x="120" y="377" width="56" height="39" rx="12" fill="#3A83F6" fill-opacity=".09"/>
+ <text x="148" y="405" font-family="Arial, sans-serif" font-size="24" fill="#3A83F6" font-weight="700" text-anchor="middle">01</text>
+ <rect x="185" y="420" width="94" height="94" rx="27" fill="#3A83F6" filter="url(#softshadow)"/>
+ <g transform="translate(232,467)" fill="none" stroke="#FFFFFF" stroke-width="4.6" stroke-linejoin="round" stroke-linecap="round"><circle cx="0" cy="0" r="24"/><circle cx="0" cy="0" r="11"/><path d="M0-34V-19 M0 19V34 M-34 0H-19 M19 0H34"/></g>
+ <text x="232" y="568" font-family="Noto Sans CJK SC, sans-serif" font-size="31" fill="#203B62" font-weight="750" text-anchor="middle">选择评测对象</text>
+ 
+<rect x="215" y="591" width="34" height="4" rx="2" fill="#3A83F6" fill-opacity=".28"/>
+<path d="M688 495H728" stroke="#7BA9DA" stroke-width="4" stroke-linecap="round"/><path d="M722 487L732 495L722 503" stroke="#5E9FDF" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<g filter="url(#shadow)"><rect x="420" y="355" width="264" height="281" rx="26" fill="url(#surface)" stroke="#D9E7F7" stroke-width="2"/></g>
+ <path d="M443 359H661" stroke="#527CF0" stroke-width="4" stroke-opacity=".48" stroke-linecap="round"/>
+ <rect x="440" y="377" width="56" height="39" rx="12" fill="#527CF0" fill-opacity=".09"/>
+ <text x="468" y="405" font-family="Arial, sans-serif" font-size="24" fill="#527CF0" font-weight="700" text-anchor="middle">02</text>
+ <rect x="505" y="420" width="94" height="94" rx="27" fill="#527CF0" filter="url(#softshadow)"/>
+ <g transform="translate(552,467)" fill="none" stroke="#FFFFFF" stroke-width="4.6" stroke-linejoin="round" stroke-linecap="round"><ellipse cx="0" cy="-19" rx="29" ry="10"/><path d="M-29-19V18C-29 32 29 32 29 18V-19 M-29-1C-29 14 29 14 29-1 M-29 17C-29 30 29 30 29 17"/></g>
+ <text x="552" y="568" font-family="Noto Sans CJK SC, sans-serif" font-size="31" fill="#203B62" font-weight="750" text-anchor="middle">选择数据集</text>
+ 
+<rect x="535" y="591" width="34" height="4" rx="2" fill="#527CF0" fill-opacity=".28"/>
+<path d="M1008 495H1048" stroke="#7BA9DA" stroke-width="4" stroke-linecap="round"/><path d="M1042 487L1052 495L1042 503" stroke="#5E9FDF" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<g filter="url(#shadow)"><rect x="740" y="355" width="264" height="281" rx="26" fill="url(#surface)" stroke="#D9E7F7" stroke-width="2"/></g>
+ <path d="M763 359H981" stroke="#6E75E9" stroke-width="4" stroke-opacity=".48" stroke-linecap="round"/>
+ <rect x="760" y="377" width="56" height="39" rx="12" fill="#6E75E9" fill-opacity=".09"/>
+ <text x="788" y="405" font-family="Arial, sans-serif" font-size="24" fill="#6E75E9" font-weight="700" text-anchor="middle">03</text>
+ <rect x="825" y="420" width="94" height="94" rx="27" fill="#6E75E9" filter="url(#softshadow)"/>
+ <g transform="translate(872,467)" fill="none" stroke="#FFFFFF" stroke-width="4.6" stroke-linejoin="round" stroke-linecap="round"><rect x="-24" y="-30" width="48" height="60" rx="6"/><path d="M-13-11L-7-5L4-17 M9-12H17 M-13 12L-7 18L4 7 M9 12H17"/></g>
+ <text x="872" y="568" font-family="Noto Sans CJK SC, sans-serif" font-size="31" fill="#203B62" font-weight="750" text-anchor="middle">选择用例</text>
+ 
+<rect x="855" y="591" width="34" height="4" rx="2" fill="#6E75E9" fill-opacity=".28"/>
+<path d="M1328 495H1368" stroke="#7BA9DA" stroke-width="4" stroke-linecap="round"/><path d="M1362 487L1372 495L1362 503" stroke="#5E9FDF" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<g filter="url(#shadow)"><rect x="1060" y="355" width="264" height="281" rx="26" fill="url(#surface)" stroke="#D9E7F7" stroke-width="2"/></g>
+ <path d="M1083 359H1301" stroke="#8275DD" stroke-width="4" stroke-opacity=".48" stroke-linecap="round"/>
+ <rect x="1080" y="377" width="56" height="39" rx="12" fill="#8275DD" fill-opacity=".09"/>
+ <text x="1108" y="405" font-family="Arial, sans-serif" font-size="24" fill="#8275DD" font-weight="700" text-anchor="middle">04</text>
+ <rect x="1145" y="420" width="94" height="94" rx="27" fill="#8275DD" filter="url(#softshadow)"/>
+ <g transform="translate(1192,467)" fill="none" stroke="#FFFFFF" stroke-width="4.6" stroke-linejoin="round" stroke-linecap="round"><path d="M-28-25H27Q34-25 34-18V13Q34 20 27 20H-6L-24 34V20H-28Q-34 20-34 13V-18Q-34-25-28-25Z"/><path d="M-17-8H19 M-17 4H8"/></g>
+ <text x="1192" y="568" font-family="Noto Sans CJK SC, sans-serif" font-size="31" fill="#203B62" font-weight="750" text-anchor="middle">补充预期答案</text>
+ 
+<text x="1192" y="605" font-family="Noto Sans CJK SC, sans-serif" font-size="23" fill="#6580A1" text-anchor="middle">可选</text>
+<path d="M1648 495H1688" stroke="#7BA9DA" stroke-width="4" stroke-linecap="round"/><path d="M1682 487L1692 495L1682 503" stroke="#5E9FDF" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<g filter="url(#shadow)"><rect x="1380" y="355" width="264" height="281" rx="26" fill="url(#surface)" stroke="#D9E7F7" stroke-width="2"/></g>
+ <path d="M1403 359H1621" stroke="#6C66CC" stroke-width="4" stroke-opacity=".48" stroke-linecap="round"/>
+ <rect x="1400" y="377" width="56" height="39" rx="12" fill="#6C66CC" fill-opacity=".09"/>
+ <text x="1428" y="405" font-family="Arial, sans-serif" font-size="24" fill="#6C66CC" font-weight="700" text-anchor="middle">05</text>
+ <rect x="1465" y="420" width="94" height="94" rx="27" fill="#6C66CC" filter="url(#softshadow)"/>
+ <g transform="translate(1512,467)" fill="none" stroke="#FFFFFF" stroke-width="4.6" stroke-linejoin="round" stroke-linecap="round"><path d="M-26-28V28 M0-28V28 M26-28V28"/><rect x="-34" y="-14" width="16" height="11" rx="3" fill="none"/><rect x="-8" y="8" width="16" height="11" rx="3" fill="none"/><rect x="18" y="-18" width="16" height="11" rx="3" fill="none"/></g>
+ <text x="1512" y="568" font-family="Noto Sans CJK SC, sans-serif" font-size="31" fill="#203B62" font-weight="750" text-anchor="middle">选择评估器</text>
+ 
+<rect x="1495" y="591" width="34" height="4" rx="2" fill="#6C66CC" fill-opacity=".28"/>
+<path d="M1968 495H2008" stroke="#7BA9DA" stroke-width="4" stroke-linecap="round"/><path d="M2002 487L2012 495L2002 503" stroke="#5E9FDF" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<g filter="url(#shadow)"><rect x="1700" y="355" width="264" height="281" rx="26" fill="url(#surface)" stroke="#D9E7F7" stroke-width="2"/></g>
+ <path d="M1723 359H1941" stroke="#19A7C5" stroke-width="4" stroke-opacity=".48" stroke-linecap="round"/>
+ <rect x="1720" y="377" width="56" height="39" rx="12" fill="#19A7C5" fill-opacity=".09"/>
+ <text x="1748" y="405" font-family="Arial, sans-serif" font-size="24" fill="#19A7C5" font-weight="700" text-anchor="middle">06</text>
+ <rect x="1785" y="420" width="94" height="94" rx="27" fill="#19A7C5" filter="url(#softshadow)"/>
+ <g transform="translate(1832,467)" fill="none" stroke="#FFFFFF" stroke-width="4.6" stroke-linejoin="round" stroke-linecap="round"><path d="M-20-27L28 0L-20 27Z" stroke-linejoin="round"/><path d="M-32-12V-27Q-32-34-23-34 M-32 12V27Q-32 34-23 34 M32-12V-27Q32-34 23-34 M32 12V27Q32 34 23 34"/></g>
+ <text x="1832" y="568" font-family="Noto Sans CJK SC, sans-serif" font-size="31" fill="#203B62" font-weight="750" text-anchor="middle">执行实验</text>
+ 
+<text x="1832" y="605" font-family="Noto Sans CJK SC, sans-serif" font-size="23" fill="#6580A1" text-anchor="middle">下发</text>
+<g filter="url(#shadow)"><rect x="2020" y="355" width="264" height="281" rx="26" fill="url(#surface)" stroke="#D9E7F7" stroke-width="2"/></g>
+ <path d="M2043 359H2261" stroke="#1496B5" stroke-width="4" stroke-opacity=".48" stroke-linecap="round"/>
+ <rect x="2040" y="377" width="56" height="39" rx="12" fill="#1496B5" fill-opacity=".09"/>
+ <text x="2068" y="405" font-family="Arial, sans-serif" font-size="24" fill="#1496B5" font-weight="700" text-anchor="middle">07</text>
+ <rect x="2105" y="420" width="94" height="94" rx="27" fill="#1496B5" filter="url(#softshadow)"/>
+ <g transform="translate(2152,467)" fill="none" stroke="#FFFFFF" stroke-width="4.6" stroke-linejoin="round" stroke-linecap="round"><path d="M-31 27H33"/><rect x="-25" y="1" width="11" height="24" rx="2"/><rect x="-6" y="-11" width="11" height="36" rx="2"/><rect x="13" y="-28" width="11" height="53" rx="2"/></g>
+ <text x="2152" y="568" font-family="Noto Sans CJK SC, sans-serif" font-size="31" fill="#203B62" font-weight="750" text-anchor="middle">浏览实验结果</text>
+ 
+<text x="2152" y="605" font-family="Noto Sans CJK SC, sans-serif" font-size="23" fill="#6580A1" text-anchor="middle">分数 + 依据 + 建议</text>
+<line x1="85" y1="716" x2="2315" y2="716" stroke="#D5E6F8" stroke-width="2"/>
+<circle cx="116" cy="716" r="6" fill="#529EED"/>
+<circle cx="2282" cy="716" r="6" fill="#20B9BD"/>
+<text x="1200" y="764" font-family="Noto Sans CJK SC, sans-serif" text-anchor="middle" font-size="24" fill="#7893AD">Agent Insight · 评测实验工作流</text>
+</svg>
