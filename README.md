@@ -60,11 +60,12 @@ python -m http.server 8000
 
 | 方式 | 适合 | 做法 |
 | --- | --- | --- |
+| GitHub Pages（当前线上：<https://mangooai.github.io/agent-insight-web/>） | 跟代码仓一起维护 | 推送到 `main` 分支后，`.github/workflows/deploy-pages.yml` 自动发布 |
 | 自有服务器 + nginx | 已有服务器、内网环境 | 把整个目录上传到服务器，参考 `deploy/nginx.conf` 配置后 `nginx -s reload` |
 | 对象存储 + CDN | 公网访问、免运维 | 华为云 OBS / 阿里云 OSS / 腾讯云 COS 开启“静态网站托管”，上传整个目录，首页设为 `index.html`、404 页设为 `404.html` |
-| 代码托管平台 Pages | 跟代码仓一起维护 | 把站点放进 Git 仓库，开启 Pages 服务（以平台实际提供的为准） |
 
 注意：
+- 站点地址变化（换域名或仓库名）时，同步修改 `404.html` 里的 `<base href>` 和各页面的 `canonical` / `og:` 地址；
 - 上传时保持目录结构不变，尤其是 `content/`（文档页按相对路径读取 Markdown）；
 - `tools/`、`deploy/`、`legacy/`、`.hallmark/` 不需要对外发布，可以不上传；
 - 必须通过 HTTP(S) 访问，直接双击 HTML 文件时文档页无法加载。
