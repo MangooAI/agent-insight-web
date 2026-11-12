@@ -32,7 +32,7 @@ const Docs = {
       if (!res.ok) throw new Error('HTTP ' + res.status);
       this.groups = await res.json();
     } catch (e) {
-      this.main.innerHTML = '<div class="md-error"><b>文档清单加载失败</b>：无法读取 <code>content/docs/manifest.json</code>。请通过本地服务访问本站（运行 <code>serve.bat</code> 或 <code>python -m http.server 8000</code>）。</div>';
+      this.main.innerHTML = '<div class="md-error"><b>文档清单加载失败</b>：无法读取 <code>content/docs/manifest.json</code>。请通过本地服务访问本站（运行 <code>serve.bat</code> 或 <code>python tools/serve.py 8000</code>）。</div>';
       return;
     }
     this.groups.forEach(g => g.items.forEach(it => { it.group = g.group; this.flat.push(it); this.byId.set(it.id, it); }));

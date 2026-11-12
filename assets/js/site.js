@@ -348,7 +348,7 @@ function preprocessMd(md, currentFile) {
       resolved = base.join('/');
     }
     const id = map[resolved];
-    if (id) return '[' + label + '](docs.html#/' + id + (anchor ? '#' + anchor : '') + ')';
+    if (id) return '[' + label + '](docs#/' + id + (anchor ? '#' + anchor : '') + ')';
     return m;
   });
   return text;
@@ -374,7 +374,7 @@ function enhanceMd(container) {
 
 function mdErrorBox(url) {
   return '<div class="md-error"><b>文档加载失败</b>：无法读取 <code>' + url + '</code>。<br>' +
-    '本站内容由 Markdown 文件驱动，需要通过 HTTP 访问。请在站点根目录运行 <code>serve.bat</code>（或 <code>python -m http.server 8000</code>）后访问 <code>http://localhost:8000</code>，不要直接双击 HTML 文件。</div>';
+    '本站内容由 Markdown 文件驱动，需要通过 HTTP 访问。请在站点根目录运行 <code>serve.bat</code>（或 <code>python tools/serve.py 8000</code>）后访问 <code>http://localhost:8000</code>，不要直接双击 HTML 文件。</div>';
 }
 
 async function loadMd(url, target, currentFile) {

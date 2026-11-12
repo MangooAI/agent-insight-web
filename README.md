@@ -10,11 +10,13 @@ v4 重构要点：移动端适配、图片按原始比例完整展示并支持�
 serve.bat
 
 # 方式二：手动
-python -m http.server 8000
+python tools/serve.py 8000
 ```
 
 访问 <http://localhost:8000>。
 > 文档页用 fetch 加载 Markdown，必须通过 HTTP 访问；直接双击 HTML（file://）会加载失败。
+>
+> 站内链接不带 `.html` 后缀（如 `/install`、`/docs#/quick-start`），GitHub Pages 和 `tools/serve.py` 会自动对应到 `install.html`；用其他静态服务器时需要类似配置（nginx 见 `deploy/nginx.conf` 中的 `try_files`）。旧的 `install.html` 这类地址仍然可以访问。
 
 ## 目录结构
 
@@ -33,6 +35,7 @@ python -m http.server 8000
 ├─ 404.html                页面不存在时显示
 ├─ content/docs/           文档 Markdown + manifest.json
 ├─ tools/update_docs.py    文档目录同步 + WebP 生成（update_docs.bat 双击运行）
+├─ tools/serve.py          本地预览服务器（serve.bat 双击运行，支持无后缀地址）
 ├─ deploy/nginx.conf       nginx 部署示例
 └─ legacy/                 历史版本备份（v3-backup 为本次重构前的版本）
 ```
